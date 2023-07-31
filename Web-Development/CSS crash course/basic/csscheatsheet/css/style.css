@@ -1,0 +1,243 @@
+/*
+*{
+	margin:0;
+	padding:0;
+}
+*/ 
+
+body {
+	background-color: #f4f4f4;
+	color: #555555;
+
+	font-weight: normal; /*   font: weight 400px;  */
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	/* Same as above */
+	font: normal 16px Arial, Helvetica, sans-serif;
+
+	line-height: 1.6em;
+	margin: 0;
+}
+
+.container {
+	width: 80%; /* use percentage for responsive look*/
+	margin: auto;
+}
+
+a {
+	text-decoration: none; /* to remove underline */
+	color: #000;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: green;
+}
+
+a:visited {
+}
+
+.button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: red;
+	color: #fff;
+}
+
+.clr {
+	clear: both;
+}
+
+.box-1 {
+	background-color: #333;
+	color: #fff;
+
+	border-width: 3px;
+	border-color: #000;
+	border-style: solid;
+
+	border-right: 5px red solid; /* width color style */
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid;
+
+	border-bottom-width: 10px;
+	border-top-style: dotted;
+
+	border: 5px red solid;
+	border: 5px solid red;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	/* Same as above */
+	padding: 20px;
+
+	margin-top: 20px;
+	margin: 20px 0; /*  top/bottom(x)     right/left(y)   */
+}
+
+.box-1 h1 {
+	/*  text formatting */
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+
+	text-decoration: overline; /* underline */
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+}
+
+.box-2 {
+	border: 3px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories {
+	border: 1px #ccc solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.categories h2 {
+	text-align: center;
+}
+
+.categories ul {
+	padding: 0;
+	padding-left: 20px;
+	list-style: square;
+	list-style: none; 
+}
+
+.categories li {
+	padding-bottom: 6px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url("../images/check.png");
+}
+
+.my-form {
+	padding: 20px;
+}
+
+.my-form .form-group {
+	padding-bottom: 15px;
+}
+
+.my-form label {
+	display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+	padding: 8px;
+	width: 100%;
+}
+
+/* float property */
+
+.block {
+	/* my blocks was one after another, 
+	now these blocks will be in one row
+	*/
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+
+	/* 
+		https://www.w3schools.com/css/css3_box-sizing.asp
+		By default(Without  box-sizing Property), the width and height of an element is calculated like this:
+			width + padding + border = actual width of an element
+			height + padding + border = actual height of an element
+
+		The box-sizing property allows us to include the padding and border in an 
+		element's total width and height.
+		Without this our last block was going in a new line
+		 
+		*/
+}
+
+#main-block {
+	float: left;
+	width: 70%;
+
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/* position property */
+
+.p-box {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin-top: 30px;
+	position: relative;
+
+	background-image: url("../images/bgimage.jpg");
+	background-repeat: no-repeat;
+	background-position: 100px 200px;
+	background-position: center top; /* working*/
+}
+
+.p-box h1 {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	/* position relative to it's positioned ancestor if it has --  position: relative; */
+	/* otherwise relative to the viewport  1:07:00*/
+}
+
+.p-box h2 {
+	position: absolute;
+	bottom: 40px;
+	right: 100px;
+}
+
+.fix-me {
+	position: fixed;
+	top: 400px;
+}
+
+/* Pseudo classes */
+
+.my-list li:first-child {
+	background: red;
+}
+
+.my-list li:last-child {
+	background: blue;
+}
+
+.my-list li:nth-child(5) {
+	background: yellow;
+}
+
+.my-list li:nth-child(even) {
+	background: grey;
+}

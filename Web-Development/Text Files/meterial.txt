@@ -1,0 +1,31 @@
+
+
+free web templates ,  sample website designs   ,     websites design templates 
+
+
+(https://convoy.com/)
+https://www.website.com/website-templates/all
+
+
+************************
+
+free image stock   https://pixabay.com/illustrations/man-male-human-person-model-5311171/
+source unsplash    https://source.unsplash.com/collection/190727/1600x900
+
+https://www.pexels.com/
+
+https://www.pexels.com/
+
+Google -> tools-> user rights -> labled for .. reuse
+
+background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            
+
+************************
+
+--buy domain  for www.noumangym.com
+    ---make backend database
+    -- run ad for this page ( for targeted area)
+     --   give contact info
+
+************************

@@ -1,0 +1,36 @@
+
+
+1 A simple alert example with jQuery file
+2 Ready function example
+3 TAG based Selector
+4 ID based Selector
+5 Class based Selector
+
+6 Combining different selectors
+
+7 'Click' Event example
+8 'Two numbers' calculator example
+9 'Elements creation' in DOM example
+10 'Multiple DIVs creation + Accessing properties' example
+
+11 'Removing element from' DOM example                              ( remove() + closest() )
+12 'Reterive and display data from different elements' example    (    single click Handler)
+
+13 'Create elements on user selection' example    
+
+14 'Store data in an associative array and display it' example     (   Array()  practice  )
+
+15 'Dynamic Rows Generation for data capturing' example          ( iterate over elements ) ( find() )
+
+16 'Playing with DOM' example             (Create Dynamic Content, Click on any DIV once created to select ) ( add class , remove cclass)
+17 'A small menu/submenu using jQuery    
+18 'Event Binding approaches'
+
+19 'Pseudo Selectors and 'each' function demo
+20 $.get & $.getJSON functions with APIs
+
+
+note:
+
+
+see php Examples :   folder = 11 for Ajax in Jquery

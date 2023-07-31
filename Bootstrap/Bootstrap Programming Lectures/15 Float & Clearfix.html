@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .lightgreen {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="lightgreen">
+            <h2>Div A</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+        <div class="blue">
+            <h2>Div B</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <!-- take 25% width of its parent -->
+        <div class="w-25 float-start lightgreen">
+            <h2>Div A</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+        <div class="w-25 float-end blue">
+            <h2>Div B</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="container clearfix">
+        <div class="w-25 float-start lightgreen">
+            <h2>Div A</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+        <div class="w-25 float-end blue">
+            <h2>Div B</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+    <br>
+    <div class="container clearfix">
+        <div class="w-25 float-md-start lightgreen">
+            <h2>Div A</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+        <div class="w-25 float-md-end blue">
+            <h2>Div B</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+    <br>
+    <div class="container clearfix">
+        <div class="w-25 float-lg-start float-md-end lightgreen">
+            <h2>Div A</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+        <div class="w-25 float-lg-end float-md-start blue">
+            <h2>Div B</h2>
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
+</body>
+
+</html>

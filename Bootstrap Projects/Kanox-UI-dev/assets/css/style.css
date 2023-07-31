@@ -1,0 +1,553 @@
+/* google font Roboto cdn */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* google font popins cdn */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: #f7f7f7;
+}
+
+/* header sectiuon styling start here */
+#header {
+  margin-bottom: 20px;
+}
+
+#header .nav-item {
+  margin-left: 20px;
+}
+
+#header .nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #112e41;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-toggler-btn {
+  background-color: #ff1481;
+  color: #000;
+}
+
+/* header sectiuon styling end here */
+
+/* main section styling starts here */
+
+#main {
+  position: relative;
+  height: 80%;
+}
+
+#main .main-page-box1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#main .main-page-box1 img,
+.main-page-box2 img {
+  width: 100%;
+}
+#main .main-page-box2 {
+  position: absolute;
+  right: 0;
+  top: -110px;
+}
+
+#main h2 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+  color: #112e41;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+#main h2 span {
+  display: block;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+#main h3 {
+  font-size: 50px;
+  color: #112e41;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#main .main-page-btn {
+  background-color: #f15381;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 150px;
+  margin: 20px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+#main .main-page-btn:hover {
+  box-shadow: 0px 11px 12px 5px #f15381;
+}
+
+#main .main-img-box {
+  width: 90%;
+}
+
+#main .main-img-box img {
+  width: 100%;
+  height: 90%;
+}
+
+/* main section styling ends here */
+
+/* features section styling start here */
+#features {
+  max-width: 100vw;
+  min-height: 70vh;
+  background-color: #fff;
+}
+.intro-para {
+  color: #f15381;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.intro-heading {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+#features-detail {
+  background-color: #112e41;
+  max-width: 100vw;
+  min-height: 50vh;
+  padding: 100px auto;
+}
+
+#features-detail .card {
+  margin-left: 10px;
+  background-color: #2e4158;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+#features-detail .card :hover {
+  background-color: #fff;
+}
+#features-detail .card:hover .card-icon i {
+  background-color: #ff1481;
+}
+.card .card-icon {
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card .card-text {
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  color: #9d9999;
+}
+
+.card .card-icon i {
+  background-color: #586779;
+  width: 61px;
+  height: 61px;
+  font-size: 22px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* features section styling end here */
+
+/* about section styling starts here */
+#about {
+  min-height: 90vh;
+  padding: 20px;
+}
+#about .image-section {
+  position: relative;
+  background: url(../images/overlay/about_overlay.png) no-repeat;
+  background-size: cover;
+}
+
+#about .image-section #image-01 {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+#about .image-section #image-02 {
+  position: absolute;
+  right: -83px;
+  top: -50px;
+}
+#about .image-section h2 {
+  bottom: -30%;
+  right: -60%;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 45px;
+  position: absolute;
+  z-index: 7;
+  width: 500px;
+}
+#about .image-section #square {
+  border: 10px solid #f7547f;
+  height: 40%;
+  width: 30%;
+  bottom: -40%;
+  right: 5%;
+  position: absolute;
+  /* margin-right: 0; */
+  z-index: 6;
+  margin-top: 485px;
+}
+#about .text-section h4 {
+  font-size: 1.3rem;
+}
+#about .text-section .about-para {
+  font-size: 1rem;
+  word-spacing: 2px;
+  color: #646464;
+}
+#about .text-section a {
+  background-color: #f15381;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* about section styling ends here */
+
+/* recent work secction styling start here */
+.recent-work {
+  min-height: 90vh;
+}
+.recent-work img {
+  width: 100%;
+  height: 100%;
+}
+.recent-work .text-section .para {
+  color: #f7547f;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.recent-work .text-section .work-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.recent-work .text-section p {
+  word-spacing: 3px;
+  color: #646464;
+}
+.recent-work .text-section .btn {
+  transition: all 0.4s ease-in-out;
+}
+.recent-work .text-section .btn:hover {
+  color: #f15381;
+}
+/* recent work secction styling ends here */
+
+/* analysis section styling starts here */
+#analysis {
+  background-color: #112e41;
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+#analysis .card-number,
+.analysis-text {
+  display: inline-block;
+}
+#analysis .card-number {
+  font-size: 70px;
+  margin-left: 20px;
+}
+#analysis .analysis-card-image {
+  width: 100px;
+  padding: 20px;
+  display: block;
+}
+/* analysis section styling ends here */
+
+/* team section styling starts here */
+
+#team {
+  min-height: 70vh;
+}
+
+#team-details {
+  background-color: #112e41;
+  min-height: 40vh;
+}
+.team-member {
+  border: 2px solid white;
+}
+.team-member .card {
+  color: #fff;
+  border: none;
+}
+.team-member .card img {
+  width: 100%;
+}
+.team-member .card .card-body {
+  background-color: #112e41;
+}
+.team-member .card .card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.team-member .card p,
+a {
+  color: #abb2ba;
+  text-align: center;
+}
+.team-member .card p {
+  font-size: 16px;
+}
+.team-member .card a {
+  text-decoration: none;
+}
+/* team section styling ends here */
+
+/* news section styling starts here */
+#news {
+  min-height: 70vh;
+}
+#news .card {
+  transition: all 0.4s ease-in-out;
+}
+.timeline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+}
+#news .card .card-img-top {
+  width: 100%;
+}
+#news a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+#news a h5 {
+  font-size: 20px;
+}
+#news .card a:hover h5 {
+  color: #f15381;
+}
+#news .links a {
+  font-size: 16px;
+}
+#news .links a i {
+  color: #f15381;
+}
+/* news section styling ends here */
+
+/* footer section styling starts here */
+footer {
+  background-color: #112e41;
+  color: #fff;
+}
+.footer-section1 p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #abb2ba;
+  line-height: 25px;
+  text-align: justify;
+}
+footer .insta-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer-section2 h3 {
+  font-family: "Poppins", sans-serif;
+}
+footer .form {
+  margin-bottom: 20px;
+}
+.input-group-append button {
+  background-color: #f15381;
+  color: #fff;
+  border: 0px;
+}
+.social-links a {
+  color: #9d9999;
+  margin: 10px 5px;
+}
+footer hr {
+  border-top: 1px solid #fff;
+}
+/* footer section styling e here */
+
+@media only screen and (max-width: 991px) and (min-width: 678px) {
+  body {
+    background-color: #f0eed4;
+  }
+
+  .navbar-nav {
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.4s ease-in;
+  }
+
+  .navbar-nav .nav-item a {
+    text-align: left;
+  }
+
+  /* main page repsonsive code starts here */
+  #main {
+    height: 60vh;
+  }
+  #about .image-section {
+    position: static !important;
+  }
+  .image-section {
+    background-color: #f0eed4;
+  }
+  #about #square {
+    left: 0;
+  }
+  #main .main-page-box1,
+  .main-page-box2 {
+    display: none;
+  }
+
+  #main h2 {
+    font-size: 40px;
+  }
+
+  #main h2 span {
+    font-size: 30px;
+  }
+
+  #main h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .card {
+    margin-bottom: 10px768768;
+  }
+
+  .card .card-title {
+    font-size: 18px;
+  }
+
+  .card .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .card .card-icon i {
+    margin-bottom: 0px;
+  }
+
+  .card .card-icon {
+    padding: 15px;
+  }
+
+  .recent-work img {
+    width: 100%;
+    height: 100%;
+  }
+  .recent-work .text-section .para {
+    font-weight: 500;
+  }
+  .recent-work .text-section .work-heading {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .recent-work .text-section p {
+    word-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: #f0eed4;
+  }
+  .intro-para {
+    font-size: 18px;
+  }
+  .intro-heading {
+    font-size: 25px;
+  }
+  .navbar-nav {
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.4s ease-in;
+  }
+
+  .navbar-nav .nav-item a {
+    text-align: left;
+  }
+  /* #main . */
+  /* main page repsonsive code starts here */
+  #main .main-page-box1,
+  .main-page-box2 {
+    display: none;
+  }
+
+  #main h2 {
+    font-size: 40px;
+  }
+
+  #main h2 span {
+    font-size: 30px;
+  }
+
+  #main h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .card {
+    margin-bottom: 10px768768;
+  }
+
+  .card .card-title {
+    font-size: 18px;
+  }
+
+  .card .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .card .card-icon i {
+    margin-bottom: 0px;
+  }
+
+  .card .card-icon {
+    padding: 15px;
+  }
+}

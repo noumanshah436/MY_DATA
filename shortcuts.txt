@@ -1,0 +1,3 @@
+VS Code allows you to quickly search over all files in the currently opened folder.
+ Press Ctrl+Shift+F and 
+enter your search term. Search results are grouped into files containing the search term, with an indication of the hits in each file and its location.

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset class</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .green {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col orange">Col 1 - row 1</div>
+            <div class="col pink">Col 2</div>
+            <div class="col blue">Col 3</div>
+            <div class="col green">Col 4</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col order-last orange">Col 1 - row 2</div>
+            <div class="col pink">Col 2</div>
+            <div class="col order-first blue">Col 3</div>
+            <div class="col green">Col 4</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col order-md-last orange">Col 1 - row 3</div>
+            <div class="col pink">Col 2</div>
+            <div class="col order-md-first blue">Col 3</div>
+            <div class="col green">Col 4</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col order-2 orange">Col 1 - row 4</div>
+            <div class="col order-3 pink">Col 2</div>
+            <div class="col order-4 blue">Col 3</div>
+            <div class="col order-1 green">Col 4</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- this order only work for screen >= medium( >= 768px) -->
+            <div class="col order-md-2 orange">Col 1 - row 5</div>
+            <div class="col order-md-3 pink">Col 2</div>
+            <div class="col order-md-4 blue">Col 3</div>
+            <div class="col order-md-1 green">Col 4</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- this order only work for screen >= medium( >= 768px) -->
+            <div class="col-md-5 order-md-1  orange">Col 1 - row 6</div>
+            <div class="col-md-3 order-md-3  pink">Col 2</div>
+            <div class="col-md-4 order-md-2  blue">Col 3</div>
+
+        </div>
+
+
+        <br>
+        <div class="row">
+            <!-- this order only work for screen >= medium( >= 768px) -->
+            <div class="col-md-5 order-md-1 order-sm-3 orange">Col 1 - row 7</div>
+            <div class="col-md-3 order-md-3 order-sm-2 pink">Col 2</div>
+            <div class="col-md-4 order-md-2  order-sm-1 blue">Col 3</div>
+
+        </div>
+
+
+        <br>
+        <div class="row">
+            <div class="col-md-8 order-md-2 orange">
+                <h2>Heading</h2>
+                <p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus optio eligendi tempore?
+                    Soluta laudantium qui quos id quae provident est quaerat cum
+                    pariatur doloremque ipsa repudiandae, harum accusamus iure odio eius accusantium excepturi maiores
+                    rerum incidunt beatae praesentium, quidem sint nulla? Beatae,
+                    voluptates pariatur assumenda nesciunt quae harum laboriosam esse est nemo libero non odit earum
+                    expedita aliquam vero, neque ipsam iusto ex, nihil hic suscipit! Ut
+                    veritatis architecto debitis quaerat sit explicabo, quia ipsam, consequatur delectus ducimus
+                    voluptatum dolor nobis exercitationem? Adipisci est explicabo eaque veniam
+                    quaerat vero, magnam suscipit distinctio doloremque, numquam a sed ab voluptatum modi!</p>
+                </p>
+            </div>
+            <div class="col-md-4 order-md-1 pink">
+                <!--ul>li*5-->
+                <ul>
+                    <li>Nouman</li>
+                    <li>shah</li>
+                    <li>farhan</li>
+                    <li>Ali</li>
+                    <li>Naeem</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* A Flexible Layout must have a parent element with the display property set to flex.
+        Direct child elements(s) of the flexible container automatically becomes flexible items.
+     */
+
+/* play here */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox */
+/* https://www.w3schools.com/css/css3_flexbox.asp */
+
+.container {
+	height: 544px;
+	width: 100%;
+	border: 2px solid black;
+	display: flex;
+	/* Initialize the container as a flex box */
+
+	/* Flex properties for a flex container  --  can only applied to container*/
+
+	/*(Default value of flex-direction is row) */
+	flex-direction: column;
+	flex-direction: column-reverse;
+	flex-direction: row-reverse; /*    4 3 2 1   */
+	flex-direction: row;
+
+	/*  
+     nowrap( shrink to fit the container )  , 
+    wrap( if items are too large to display in one line, they will wrap onto another line)   
+    (Default value of flex-direction is no-wrap) */
+	flex-wrap: nowrap;
+	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
+
+	/* This is a shorthand for flex-direction and flex-wrap ;; */
+	flex-flow: row-reverse wrap;
+	flex-flow: row nowrap;
+
+	/* justify-content will justify the items in horizontal direction */
+	justify-content: center;
+	justify-content: space-around; /* same margin around container items including start and end of container */
+	justify-content: space-between; /* space between container items excluding start and end of container  */
+	justify-content: space-evenly; /* same space around container items including start and end of container */
+	justify-content: flex-start; /*place items to the right - default*/ 
+	justify-content: flex-end; /* place items to the right  */  
+	justify-content: initial; /*default*/ 
+
+	/* align-items will justify the items in vertical direction */
+	align-items: flex-end; /*  place items at the bottom of container */
+	align-items: flex-start; /*  by default  --  place items at the top of container */
+	align-items: center; /*  vertically  center the items in container -- set bigger height of container to see */
+	align-items: stretch; /*  default */
+}
+
+.item {
+	width: 200px;
+	height: 200px;
+	background-color: tomato;
+	border: 2px solid green;
+	margin: 10px;
+	padding: 3px;
+	/* line-height: 75px; */ /*   increase heaight of items */
+}
+
+#item-1 {
+	/* Flex properties for a flex item ( use separately for each item )*/
+
+	/* Higher the order of item, later it shows up in the container */
+	/* order: 1; */
+
+	/*  if screen width increases, this items will grow in width, 2 times faster than normal item*/
+	/* flex-grow: 2; */
+
+	/*  if screen width decreases, this items will shrink in width, 2 times faster than normal item*/
+	/* flex-shrink: 2; */
+}
+
+#item-2 {
+	/* flex-grow: 3;  */
+
+	/*  shrink 3 times faster  */
+	/* flex-shrink: 3; */
+
+	/* flex-basis: 160px; */
+	/* flex-basis acts as width or height under certain conditions */
+	/* when flex-direction is set to row flex-basis: will control width */
+	/* when flex-direction is set to column flex-basis: will control height */
+}
+
+#item-3 {
+	/* order: 3; */
+
+	/*  shorthand property for flex items*/
+	/* flex: flex-grow flex-shrink  flex-basis; */
+	/* flex: 2 2 230px; */
+
+	/* verticall alignment */
+	align-self: flex-start;
+	/* attach to top  */
+
+	/* align-self: flex-end; */
+	/* attach to bottom  */
+
+	/* align-self: center; */
+	/* go at center  */
+}

@@ -1,0 +1,85 @@
+
+Relative Unit	Description
+
+
+%	Relative to the parent element’s value for that property
+em	Relative to the font-size of the parent element
+rem	Relative to the font-size of the root (e.g. the <html> element). “rem” = “root em”
+
+
+
+******************
+
+.child {
+  margin: 10%;
+}
+
+
+%: You want a child element to have 10% of the parent’s width as a margin so it never fills the whole parent element. If the parent’s size changes, the margin will update too.
+
+
+
+*******
+
+.child {
+  font-size: 0.5em;
+}
+
+em: You want the font of a child element to be half the size of its parent’s font-size (e.g. the paragraph under a section’s title).
+
+
+
+*******
+
+.header {
+  font-size: 2rem;
+}
+
+rem: The font-size should be twice the size as the root element’s font. 
+This could be how you size your headers because they should all be the same size regardless of the parent container.
+
+******************
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html {
+  font-size:16px;
+}
+ 
+#top-div{
+font-size: 2rem;
+}
+
+#div1{
+font-size: 2em;
+}
+
+header{
+font-size: 2em;
+}
+
+</style>
+</head>
+<body>
+
+<p>regular</p>
+
+<div id="div1">
+  <p>Hello world</p>
+  <header> Header</header> 
+  <div id="top-div">
+	rem practice 
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+******************

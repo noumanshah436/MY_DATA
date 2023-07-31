@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Margin class</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .green {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 m-auto orange">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div>
+
+        <br>
+        <!--margin class for diff breakpoints-->
+        <div class="row">
+
+            <div class="col-md-3 m-auto orange">
+                <!--m-auto - give equal margin from left and right -->
+                ( margin class for diff breakpoints ) -- amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-md-3 green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-3 m-lg-auto  orange">
+                <!--m-auto - give equal margin from left and right if src is grater than or equal larger( > 992 px ) -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-md-3  green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-3 m-md-auto  orange">
+                <!--m-auto - give equal margin from left and right if src is grater than or equal larger( > 992 px ) -->
+                Nouman ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-sm-4  green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div>
+
+        <br>
+        <div class="row pink">
+            <div class="col-sm-4  mt-5 mb-5  orange">
+                <!--m-auto - give equal margin from left and right if src is grater than or equal larger( > 992 px ) -->
+                ( Margin for Different sides ) --- dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-sm-4 mb-4  green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+
+            <div class="col-sm-3 m-3  blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div>
+
+        <br>
+        <div class="row pink">
+            <div class="col-sm-3  mb-md-5  orange">
+                <!--m-auto - give equal margin from left and right if src is grater than or equal larger( > 992 px ) -->
+                ( Margin for Different sides ) --- dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-sm-4  mt-md-5 green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div> 
+
+        <br>
+        <div class="row pink">
+            <div class="col-sm-3  mr-md-n3  orange">
+                <!--m-auto - give equal margin from left and right if src is grater than or equal larger( > 992 px ) -->
+                ( Margin for Different sides ) --- dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+            <div class="col-sm-4   green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,aspernatur.
+            </div>
+        </div> 
+
+          
+
+    </div>
+
+</body>
+
+</html>

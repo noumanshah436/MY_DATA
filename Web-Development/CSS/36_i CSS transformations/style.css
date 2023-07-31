@@ -1,0 +1,44 @@
+p{
+	width:100px;
+	height:100px;
+	background: red;
+	font-size:85px;
+	text-align:center;
+	margin: 0px;
+}
+#p1{
+
+}
+
+#p2{
+	/*transform: translateX(50px);  */        /*   +ve moves right ,  -ve moves left */
+	/* transform: translateY(50px);  */        /*   +ve moves down ,  -ve moves up*/
+	/* transform: translate(50px,50px); */      /*  combine above properties (x,y)*/
+
+	/* transform: rotateX(180deg); */           /*   rotate along x axis  */
+	/* transform: rotateY(180deg); */
+	/* transform: rotateZ(180deg); */           /*   rotate and rotateZ do the same job   */
+	/* transform: rotate(45deg); */
+
+
+	/* transform: scaleX(2); */           /* The scaleX() method increases or decreases the width of an element.   arg= 2 or 0.5 or -2   */
+	/* transform: scaleY(0.5); */         /* The scaleY() method increases or decreases the height of an element.  */
+	/* transform: scale(2,2); */          /*This element is two times of its original width, and 2 times of its original height now */
+
+
+	/* transform: skewY(45deg); */           /*skew means neither parallel nor at right angles to a specified or implied line;*/
+	/* transform: skewX(45deg); */
+	/*  transform: skew(20deg, 10deg); */    /*The skew() method skews an element along the X and Y-axis by the given angles.*/
+
+	/* transform: matrix(1,0,0,1,0,0); */    /*   do nothing*/
+    /* transform: matrix(1,0,0,1,0,0); */    /*   do nothing*/
+	/*
+	    The parameters are as follow:
+		scaleX(),
+		skewY(),
+		skewX(),
+		scaleY(),
+		translateX(),
+		translateY()
+	*/
+}

@@ -1,0 +1,6 @@
+vue add tailwind  and minimal
+
+or add
+https://www.c-sharpcorner.com/article/how-to-add-tailwind-css-in-vue-js/
+
+

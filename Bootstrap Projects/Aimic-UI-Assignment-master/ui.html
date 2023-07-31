@@ -1,0 +1,1268 @@
+<html>
+  <head>
+    <title>
+        UI Assignment
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+
+
+  <!--This is the style tag for Mid-Content-->
+  <style>
+    .mid-content{
+      margin-bottom:10px;
+      padding-bottom:200px
+    }
+  </style>
+  <style>
+    .tabs{
+      padding-right:10px;
+      padding-left:10px;
+    }
+
+    .tabs-inner{
+      width: 288px;
+      height: 78px;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .tabs-image{
+      width: 304px;
+      height: 176px;
+      border-radius: 14px;
+    }
+    .btn-want-to-read{
+      width: 285px;
+      height: 69.48px;
+      background: #0085FF;
+      border-radius: 10px;
+    }
+    .want-to-read-text{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .check-opening-btn{
+      width: fit-content;
+      height: auto;
+      background: #0085FF;
+      border-radius: 10px;
+    }
+    </style>
+
+  <style>
+     .p-customer-turst-choosing-us{
+
+      max-width: fit-content;
+height: fit-content;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      color: #333535;
+      text-align: center;
+    }
+
+    .p-services-description{
+      width: 555px;
+      height: 48px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #6C6C6C;
+    }
+    .company-vision{
+      width:100%;
+      max-width: auto;
+      height: auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .pic-company-vision{
+      width:100%;
+      max-width: 550px;
+      height: auto;
+      padding-left:10px;
+      padding-right:10px;
+
+    }
+    .text-company-vision-mission{
+
+      height: 36px;
+      padding-bottom: 60px;
+
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      color: #333535;
+    }
+    .text-company-vision-mission-description{
+      height: 42px;
+      font-family: 'Poppins';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #6C6C6C;
+    }
+    .btn-learn-about{
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 51px;
+      font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+      background: #0085FF;
+      border-radius: 10px;
+    }
+    .container-award-winning{
+      width:100%;
+      max-width: 1140px;
+      height: fit-content;
+      padding-bottom: 10px;
+      background: #157CDC;
+      box-shadow: 0px 13px 60px rgba(227, 227, 227, 0.25);
+      border-radius: 32px;
+    }
+    .column-inside-award-winning{
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    .heading-award-winning{
+      width: 100%;
+      max-width: 342px;
+      height: 113px;
+      font-family: 'Poppins';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+    .description-award-winning{
+      width: 425px;
+      height: 72px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #D3EAFF;
+    }
+    .div-trophy-icon{
+      width: 90px;
+      height: 90px;
+      margin-top: -45px;
+      margin-left: 50px;
+      font-size:3rem;
+      border-radius:50px;
+      background: #FFAE34;
+    }
+    .icon-choosing-us{
+      width: 84.74px;
+      height: 84px;
+
+      background: #FFFFFF;
+      box-shadow: 5px 10px 32px rgba(193, 193, 193, 0.25);
+      border-radius: 60px;
+    }
+  </style>
+
+
+
+
+  <!--This is the Style Guide for Slider-->
+  <style>
+
+    .card-active{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .div-card{
+      width: auto;
+      padding:30px;
+      max-width: 259px;
+      height: auto;
+      background: #FFFFFF;
+      border-radius: 8px;
+      margin:auto;
+    }
+    .rectangle{
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(315.55deg, #EF4444 0%, #FF8989 92.87%);
+      border-radius: 8px;
+    }
+    .div-arrow{
+      border-radius: 50px;
+      width: 24px;
+      height: 24px;
+      background: #0085FF;
+      color:white;
+    }
+    .card-heading{
+      height: 32px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.2px;
+      color: #034D82;
+
+    }
+    .card-description{
+      width: 198px;
+      height: 72px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      color: #8EA9C1;
+    }
+    .active-circle{
+      color: #034D82;
+      width: 10px;
+height: 10px;
+    }
+    .circle{
+      color: #E2ECF4;
+      width: 10px;
+height: 10px;
+    }
+    </style>
+
+
+
+    <!--This style is for the footer-->
+    <style>
+      @media only screen and (max-width: 600px) {
+        #media-footer{text-align: center;}
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      #media-footer{text-align: center;}
+    }
+
+          @media only screen and (min-width: 768px) {
+      #media-footer{text-align: center;}
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+      #media-footer {text-align: left;}
+    }
+      .li-heading{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 25px;
+        color: #FFFFFF;
+      }
+
+      .li-link{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #D3D3D3;
+      }
+
+      .no-bullet{
+        list-style-type: none;
+      }
+      .footer-container{
+        background-color: #005490;
+      }
+      .aimic-in-footer{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+      .icons-others{
+        background-color: #0085FF;
+        color:white
+      }
+      .social{
+        display: inline-block;
+        border-radius: 50px;
+        padding: 0.3em 0.5em;
+        margin-right:1px;
+      }
+      .icon-twitter{
+        color: #0085FF;
+        background-color:white
+      }
+      .p1-above-footer{
+        width: 343.42px;
+        height: 113px;
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+      .p2-above-footer{
+        height: 48px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #D3EAFF;
+
+      }
+      .div-above-footer{
+        background: rgba(0, 84, 144, 0.83);
+      }
+      .free-consultaion-div{
+        width: 224px;
+        height: 57px;
+        border: 1px solid #FFFFFF;
+        border-radius: 14px;
+      }
+      .p-free-consultaion{
+        width: 201.48px;
+        height: 24px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+      .p-below-footer{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #D3D3D3;
+      }
+      .copyright-below-footer{
+        border-top: 1px solid #494949
+      }
+      .icon-footer-up{
+        width: 41px;
+  height: 40.05px;
+
+  background: #0085FF;
+  border-radius: 8px;
+
+  color: #FFFFFF;
+      }
+    </style>
+
+
+<body class="container-fluid m-0 p-0">
+  <style>
+    .img-star-icon{
+      width: 74px;
+      height: 54px;
+    }
+    #nav-item-active{
+      font-weight: 500;
+      color: #298DEA;
+    }
+    .nav-item{
+      width: justify-content;
+      margin-right:35px;
+      margin-left:35px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6C6C6C;
+    }
+    .get_started_button{
+
+      width: 142px;
+      height: 51px;
+      background: #0085FF;
+      box-shadow: 0px 5px 20px #BDDFFF;
+      border-radius: 10px;
+
+    }
+    .aimic-tag{
+      width: 101px;
+      height: 50px;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 42px;
+      color: #0085FF;
+    }
+    #business-mentoring{
+
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 52px;
+      letter-spacing: 0.3px;
+      color: #034D82;
+    }
+    #single-store-startups{
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+
+      color: #90A3B4;
+    }
+    #img-1{
+      width:100%;
+      max-width: 451px;
+      height: auto;
+    }
+    #over-country-div{
+      width: 311px;
+      height: 180px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 6px 9px 29px rgba(201, 201, 201, 0.25);
+      border-radius: 20px;
+      position:relative;
+      text-align: left;
+    }
+    #div-company-trust{
+      position:absolute;
+      top:80px;
+      left: 50px;
+      width: 220px;
+      height: 89px;
+      background: #FFFFFF;
+      box-shadow: 6px 9px 29px rgba(201, 201, 201, 0.25);
+      border-radius: 10px;
+    }
+    #p-over-country{
+
+width: 227px;
+height: 31px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+color: #333535;
+    }
+    #IT-tech{
+width: 242px;
+height: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #6C6C6C;
+
+
+    }
+    #p-more{
+
+width: 42px;
+height: 20px;
+display: inline;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 15px;
+
+color: #A6A6A6;
+    }
+    .form-inline{
+width: fit-content;
+height: 71px;
+
+background: #FFFFFF;
+box-shadow: 0px 15px 22px rgba(218, 218, 218, 0.25);
+border-radius: 15px;
+    }
+    .btn-free-consult{
+max-width: 135px;
+height: 51px;
+
+background: #0085FF;
+border-radius: 10px;
+    }
+    .form-control{
+      border: none;
+border-color: transparent;
+    }
+
+    .colomn-heading{
+/* h1 */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 50px;
+
+/* identical to box height, or 138% */
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #0085FF;
+    }
+    .colomn-text{
+
+/* h5 */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+
+/* identical to box height, or 150% */
+text-align: center;
+
+/* text-color */
+color: #252B42;
+    }
+
+
+    .p-services{
+      width: 210px;
+      height: 72px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      color: #333535;
+      text-align: center;
+    }
+
+    .p-services-description{
+      width: 555px;
+      height: 48px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #6C6C6C;
+    }
+
+  </style>
+
+
+
+<div class="d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg m-0 navbar-light">
+      <div class="container d-flex justify-content-center" style="width: fit-content;">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <p class="aimic-tag mx-2"><b>aimic</b></p>
+
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-center" id="nav-item-active" href="#">Home</a>
+          <a class="nav-item nav-link text-center" href="#">About Us</a>
+          <a class="nav-item nav-link text-center" href="#">Services</a>
+          <a class="nav-item nav-link text-center" href="#">Products</a>
+          <a class="nav-item nav-link text-center" href="#">Careers</a>
+          <a class="nav-item nav-link text-center" href="#">Contact Us</a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary text-center get_started_button">Get Started</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+<div class="pt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-5 pt-5 pb-3 pl-5">
+
+      <p id="business-mentoring">From business<br>mentoring, to marketing,<br>to App Development<br>and more.</p>
+
+      <p id="single-store-startups">From single store, startups, to large multi-store brands.</p>
+
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="Phone Number" class="sr-only">Put your phone number here...</label>
+          <input type="text" class="form-control" placeholder="Put your phone number here...">
+        </div>
+        <button type="submit" class="btn btn-primary btn-free-consult">Free Consult</button>
+      </form>
+
+    </div>
+
+
+
+
+
+    <div class="col-md-5 text-center pb-3">
+      <div id="div-company-trust" class="text-center pb-5" >
+        <img src="star-icon.png" />
+        <h4 class="d-inline"><b>5.000+</b></h4>
+
+        <img src="star-icon.png" style="visibility: hidden;"/>
+        <p class="d-inline">Company trust <i style="margin-left: 5px ;background: #00D73C;font-size: 12px; padding-left: 1px;padding-right: 1px;" class="d-inline text-white rounded-circle fa-solid fa-check"></i></p>
+
+
+      </div>
+      <img id="img-1" src="img-1.png"/>
+
+<!--
+    <div id="over-country-div" class="pt-4 bg-white d-flex justify-content-center" >
+      <div>
+        <p id="p-over-country" class="m-0">Over 20+ Country</p>
+        <p id="IT-tech" class="mb-4">IT-tech known by world IT industries</p>
+        <img src="united-states.png" />
+        <img src="canada.png" />
+        <img src="japan.png" />
+        <img src="switzerland.png" />
+        <img src="germany.png" />
+        <p id="p-more">+more</p>
+
+
+      </div>
+
+    </div>
+
+-->
+
+
+    </div>
+
+  </div>
+
+  <div class="row pt-5 pb-5 mb-5">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+      <div class="row text-center ">
+        <div class="col-lg-3 text-center">
+          <p class="colomn-heading">15K</p>
+          <p class="colomn-text">Happy Customers</p>
+        </div>
+        <div class="col-lg-3">
+          <p class="colomn-heading text-center">150K</p>
+          <p class="colomn-text">Monthly Visitors</p>
+        </div>
+        <div class="col-lg-3">
+          <p class="colomn-heading">15</p>
+          <p class="colomn-text">Countries Worldwide</p>
+        </div>
+        <div class="col-lg-3" >
+          <p class="colomn-heading">15K</p>
+          <p class="colomn-text">100+ Top Partners</p>
+        </div>
+
+      </div>
+
+     </div>
+
+     <div class="col-md-3"></div>
+  </div>
+
+
+
+
+  <div class="row justify-content-md-center px-5">
+    <div class ="col-md-8 d-flex justify-content-center">
+      <p  class="p-services text-center">Services</p>
+    </div>
+  </div>
+
+
+
+  <div class="row d-flex justify-content-center px-5">
+    <p class="p-services-description text-center">We offer a variaty of services to help you to grow and build your<br>brand and help you with developing your Products</p>
+  </div>
+
+
+  <div  class="row d-flex mx-auto pt-5 pb-5 justify-content-center">
+    <div class="col-xs-1 col-lg-1 d-flex mx-0 d-flex justify-content-center">
+      <div class="d-flex justify-content-center align-self-center div-arrow" >
+        <i class="fa-solid fa-arrow-left align-self-center" ></i>
+      </div>
+    </div>
+
+    <div class="col-xs-2 col-lg-2 my-2 mx-0 d-flex justify-content-center">
+      <div class="div-card card-active ">
+        <img src="Group-30.png" alt="Avatar" class="rectangle">
+        <br><br>
+        <p class="card-heading">SAO Design</p>
+
+        <p class="card-description pt-3">Follow a hashtag growth<br>total posts, videos and<br>images.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-2 col-lg-2 my-2 mx-0 d-flex justify-content-center">
+      <div class="div-card">
+        <img src="Group-30.png" alt="Avatar" class="rectangle">
+        <br><br>
+        <p class="card-heading">Mobile Application<br>Development</p>
+
+        <p class="card-description pt-3">Identify the most<br>influential people posting<br>with yourhashtag.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-2 col-lg-2 my-2 mx-0 d-flex justify-content-center">
+      <div class="div-card">
+        <img src="Group-30.png" alt="Avatar" class="rectangle">
+        <br><br>
+        <p class="card-heading">Enterprise Security</p>
+
+        <p class="card-description pt-3">See the most influential<br>posts on hashtag you<br>are following on.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-2 col-lg-2 my-2 mx-0 d-flex justify-content-center">
+      <div class="div-card">
+        <img src="Group-30.png" alt="Avatar" class="rectangle">
+        <br><br>
+        <p class="card-heading">Cloud Computing</p>
+
+        <p class="card-description pt-3">Visualize where people<br>are posting using your hashtag<br>made.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-1 col-lg-1 mx-0 d-flex justify-content-center">
+      <div class="d-flex justify-content-center align-self-center div-arrow" >
+        <i class="fa-solid fa-arrow-right align-self-center" ></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row d-flex justify-content-center pb-5 pt-5">
+    <div><i class="fa-solid fa-circle mr-2 active-circle"></i></div>
+    <div><i class="fa-solid fa-circle mr-2 circle" ></i></div>
+    <div><i class="fa-solid fa-circle circle"></i></div>
+  </div>
+
+
+</div>
+
+
+
+<!--This is the Mid-Content-->
+
+<div class="mid-content">
+  <div class="row justify-content-md-center px-5">
+    <div class ="col-md-8 d-flex justify-content-center">
+      <h1  class="p-customer-turst-choosing-us text-center">Customer trust is our goal</h1>
+    </div>
+  </div>
+
+
+  <div class="row d-flex justify-content-center px-5">
+    <p class="p-services-description text-center">The point of using Lorem Ipsum is that it has.</p>
+  </div>
+
+
+  <div class="row pb-4 d-flex justify-content-center">
+
+    <div class="col-lg-4 d-inline-block d-flex justify-content-center company-vision" >
+      <div class="d-flex justify-content-center align-self-center">
+        <img src="Company-vision-pic-1.png" alt="company-vision-pic-1.png" class="align-self-center pic-company-vision"/>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mx-0 d-flex justify-content-center company-vision">
+      <div class="d-flex justify-content-center align-self-center">
+
+        <div class="align-self-center px-3">
+          <h4 class="text-company-vision-mission">Company Vision</h4>
+          <p class="text-company-vision-mission-description">To reach a pinnacle as Software Solution Services<br>Company.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row pb-5 d-flex justify-content-center" style="height: fit-content;">
+
+    <div class=" col-lg-4 mx-0 d-flex justify-content-center company-vision">
+      <div class="d-flex justify-content-center align-self-center">
+
+        <div class="align-self-center px-3">
+          <h4 class="text-company-vision-mission">Company Mission</h4>
+          <p class="text-company-vision-mission-description">To reach a pinnacle as Software Solution Services<br>Company.</p>
+          <button type="submit" class="btn btn-primary btn-learn-about">Learn About</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-4 d-inline-block d-flex justify-content-center company-vision" >
+      <div class="d-flex justify-content-center align-self-center">
+        <img src="Company-vision-pic-2.png" alt="company-vision-pic-2.png" class="align-self-center pic-company-vision"/>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="d-flex pt-5 justify-content-center px-3">
+    <div class="row container-award-winning m-4">
+      <div class="d-flex justify-content-center div-trophy-icon ">
+        <div class="d-flex justify-content-center align-self-center">
+          <img src="icon-trophy-light.png" alt="icon-trophy-light.png" class="align-self-center " />
+        </div>
+
+      </div>
+
+
+
+      <div class="col-lg-4 d-flex mx-0 d-flex justify-content-center column-inside-award-winning">
+        <div class="d-flex justify-content-center align-self-center">
+          <p class="align-self-center heading-award-winning">Award winning<br>Company</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 d-flex align-items-center column-inside-award-winning">
+        <p class="description-award-winning pl-4">Since 1987 established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div style="background: #F3F3F3; padding-top: 200px; padding-bottom: 220px; margin-top:-140px; ">
+    <div class="row justify-content-md-center pb-2 px-5">
+      <div class ="col-md-8 d-flex justify-content-center">
+        <h1  class="p-customer-turst-choosing-us text-center">Why choosing us?</h1>
+      </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center px-5">
+      <p class="p-services-description text-center">The point of using Lorem Ipsum is that it has a<br>more-or-less normal distribution.</p>
+    </div>
+
+
+
+    <br><br><br>
+
+
+    <div class="row mb-5 px-3 d-flex justify-content-center" style="height: fit-content;">
+
+
+      <div class=" col-lg-1 mx-0 col-md-2 col-sm-2">
+        <div class="icon-choosing-us d-flex justify-content-center align-self-center">
+          <img src="icon-update.png" style="width: 41.36px; height: 41px;"  alt="icon-update.png" class="align-self-center"/>
+        </div>
+      </div>
+
+      <div class=" col-lg-2 pt-1 mx-0 col-md-5 col-sm-5">
+          <h5 class="align-self-center"><b>Lifetime Update</b></h5>
+          <p class="text-company-vision-mission-description">It is a long established fact that a reader will be distracted.</p>
+      </div>
+
+
+
+      <div class=" col-lg-1 mx-0 py-2"></div>
+
+
+      <div class=" col-lg-1 mx-0 col-md-2 col-sm-2">
+        <div class="icon-choosing-us d-flex justify-content-center align-self-center">
+          <img src="icon-security-check.png" style="width: 41.36px; height: 41px;"  alt="icon-security-check.png" class="align-self-center"/>
+        </div>
+      </div>
+
+      <div class=" col-lg-2 pt-1 mx-0 col-md-5 col-sm-5">
+          <h5 class="align-self-center"><b>Trustworthy Company</b></h5>
+          <p class="text-company-vision-mission-description">It is a long established fact that a reader will be distracted.</p>
+      </div>
+
+    </div>
+
+
+    <div class="row px-3 d-flex justify-content-center" style="height: fit-content;">
+
+
+      <div class=" col-lg-1 mx-0 col-md-2 col-sm-2">
+        <div class="icon-choosing-us d-flex justify-content-center align-self-center">
+          <img src="icon-trophy-2.png" style="width: 41.36px; height: 41px;"  alt="icon-trophy-2.png" class="align-self-center"/>
+        </div>
+      </div>
+
+      <div class=" col-lg-2 pt-1 mx-0 col-md-5 col-sm-5">
+          <h5 class="align-self-center"><b>Award Winning</b></h5>
+          <p class="text-company-vision-mission-description">It is a long established fact that a reader will be distracted.</p>
+      </div>
+
+
+
+      <div class=" col-lg-1 mx-0 py-2"></div>
+
+
+      <div class=" col-lg-1 mx-0 col-md-2 col-sm-2">
+        <div class="icon-choosing-us d-flex justify-content-center align-self-center">
+          <img src="icon-customer-service.png" style="width: 41.36px; height: 41px;"  alt="icon-customer-service.png" class="align-self-center"/>
+        </div>
+      </div>
+
+      <div class=" col-lg-2 pt-1 mx-0 col-md-5 col-sm-5">
+          <h5 class="align-self-center"><b>24 Hours Support</b></h5>
+          <p class="text-company-vision-mission-description">It is a long established fact that a reader will be distracted.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="d-flex justify-content-center px-3" style="margin-top:-150px">
+    <div class="row container-award-winning m-4">
+
+      <div class="col-lg-4 d-flex mx-0 d-flex justify-content-center column-inside-award-winning">
+        <div class="d-flex justify-content-center align-self-center">
+          <p class="align-self-center heading-award-winning">Award winning<br>Company</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 d-flex align-items-center column-inside-award-winning">
+        <p class="description-award-winning pl-4">Since 1987 established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="slider-tab-UI py-5">
+    <div class="row d-flex pb-5 justify-content-center">
+      <div class="col-xs-3 p-3">
+
+        <div class="tabs">
+          <img src="Tab-Rectangle-1.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">Connecting artificial<br>intelligence with digital<br>product design</p>
+         </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="col-xs-3 p-3 d-flex justify-content-center">
+
+        <div class="tabs">
+          <img src="Tab-Rectangle-2.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">Hello world, or, in other<br>words, why this blog exists</p>
+         </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-3 p-3">
+
+        <div class="tabs">
+          <img src="Tab-Rectangle-3.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">Here are some things you<br>should know regarding how<br>we work </p>
+         </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row py-5 d-flex justify-content-center">
+      <div class="col-xs-3 p-3 ">
+
+        <div class="tabs">
+          <img src="Tab-Rectangle-4.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">A few words about this blog<br>platform, Ghost, and how<br>this site was made</p>
+         </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-3 p-3 d-flex justify-content-center">
+
+        <div class="tabs ">
+          <img src="Tab-Rectangle-5.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">Updating list of 50+ sources<br>on distributed teams, remote<br>work, and how to make it all<br>work better</p>
+         </div>
+        </div>
+
+      </div>
+
+      <div class="col-xs-3 p-3">
+
+        <div class="tabs">
+          <img src="Tab-Rectangle-6.png" class="tabs-image" alt="Tabs-image">
+         <div>
+          <p class="tabs-inner pt-4">How modern remote<br>working tools get along with<br>Old School Cowboy's<br>methods</p>
+         </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row py-5 d-flex justify-content-center">
+      <button type="submit" class="btn btn-primary btn-want-to-read"><p class="want-to-read-text pt-2">Want to read next</p></button>
+    </div>
+
+  </div>
+
+<!--This is the style tag for Image Overlapping-->
+  <style>
+     .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .join-aimic-container {
+            position: relative;
+            width: 100%;
+            margin-left:100px;
+            max-width: 400px;
+        }
+
+        .div-join-aimic-pic2{
+            position: absolute;
+            color: black;
+            font-size: 2rem;
+            left: -45%;
+            bottom: 50%;
+        }
+        .div-join-aimic-pic3{
+            position: absolute;
+            color: black;
+            font-size: 2rem;
+            left: -35%;
+            bottom: -25%;
+        }
+        .div-join-aimic-play{
+            position: absolute;
+            color: black;
+            font-size: 2rem;
+            left: 50%;
+            bottom: 25%;
+        }
+        .img-join-aimic-pic1{
+          width:100% ; height: auto;
+          max-width: 516.3px;
+        }
+        .img-join-aimic-pic2{
+          width:80% ; height: auto;
+          max-width: 381.44px;
+        }
+        .img-join-aimic-pic3{
+          width:75% ; height: auto;
+          max-width: 296.98px;
+        }
+  </style>
+
+
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-1 py-5 px-5 "></div>
+
+
+
+
+    <div class="col-xl-3 p-5 d-inline-block d-flex justify-content-center join-aimic-container">
+
+      <div class="d-flex justify-content-center align-self-center">
+        <div class="align-self-center">
+
+          <img src="join-aimic-pic1.png" alt="join-aimic-pic1.png" class="img-join-aimic-pic1"/>
+          <div class="overlay">
+            <div class="div-join-aimic-pic2">
+            <img src="join-aimic-pic2.png" alt="join-aimic-pic2.png" class="img-join-aimic-pic2"/>
+            </div>
+          </div>
+
+          <div class="overlay">
+            <div class="div-join-aimic-pic3">
+            <img src="join-aimic-pic3.png" alt="join-aimic-pic3.png" class="img-join-aimic-pic3"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-xl-1 py-5 px-5 "></div>
+
+    <div class="col-xl-5 p-5 join-aimic-container">
+      <h1  class="p-customer-turst-choosing-us text-center">Join aimic</h1>
+      <p>By amping up your career with practical advice from experts,
+        you can do more with your fantastic personality to get the career
+        you want and deserve. Join Aimic today!</p>
+        <button type="submit" class="btn btn-primary check-opening-btn px-4"><p class="want-to-read-text pt-2">Check Openings</p></button>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid mx-0 px-0 footer-plus-below-footer">
+  <div class="container-fluid div-above-footer py-2" >
+    <div class="row">
+      <div class="col-xl-1  py-2"></div>
+      <div class="col-xl-3 py-2 d-flex align-items-center justify-content-center">
+        <div class="d-flex my-auto pt-3 justify-content-center">
+            <p class="p1-above-footer text-center align-self-center">Get In Touch<br>With Our Teams</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 py-2 d-flex align-items-center justify-content-center">
+        <div class="d-flex my-auto pt-3 justify-content-center">
+          <p class="p2-above-footer text-center align-self-center" sty>It is a long established fact that a reader will be distracted by the<br>readable content of a page when looking at its layout.</p>
+        </div>
+      </div>
+      <div class="col-xl-3  pt-4 d-flex align-items-center justify-content-center">
+        <div class="free-consultaion-div d-flex my-auto pt-3 justify-content-center" >
+          <p class="p-free-consultaion text-center align-self-center" >Free Consultaion</p>
+        </div>
+      </div>
+      <div class="col-xl-2 "></div>
+
+    </div>
+  </div>
+
+    <div class="container-fluid pt-5 pb-5 footer-container">
+      <div class="row " id="media-footer">
+        <div class="col-lg-2 "> </div>
+        <div class="col-lg-2 ms-4 me-3 pb-3 ">
+          <h1 class="aimic-in-footer text-white">AIMIC</h1>
+          <p class="li-link">Since 1987 established fact that a reader<br> will be distracted by the readable<br> content of a page.</p>
+          <i class="fa-brands fa-facebook-f social icons-others"></i>
+          <i class="fa-brands fa-twitter social icon-twitter"></i>
+          <i class="fa-brands fa-linkedin-in social icons-others"></i>
+          <i class="fa-brands fa-instagram social icons-others"></i>
+        </div>
+        <div class="col-lg-1 pb-3">
+          <ul class="no-bullet">
+            <li class="li-heading">Company</li>
+            <li class="li-link">Home</li>
+            <li class="li-link">About</li>
+            <li class="li-link">Services</li>
+            <li class="li-link">Team</li>
+            <li class="li-link">Careers</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 pb-3">
+          <ul class="no-bullet">
+            <li class="li-heading">Others</li>
+            <li class="li-link">Contact Us</li>
+            <li class="li-link">Blog</li>
+            <li class="li-link">Procing</li>
+            <li class="li-link">Live Support</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 pb-3">
+          <ul class="no-bullet">
+            <li class="li-heading">Others</li>
+            <li class="li-link">Contact Us</li>
+            <li class="li-link">Blog</li>
+            <li class="li-link">Procing</li>
+            <li class="li-link">Live Support</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 pb-3">
+          <ul class="no-bullet">
+            <li class="li-heading">Others</li>
+            <li class="li-link">Contact Us</li>
+            <li class="li-link">Blog</li>
+            <li class="li-link">Procing</li>
+            <li class="li-link">Live Support</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 ms-4 pb-3">
+          <p class="li-heading">Address</p>
+          <p class="li-link">AIMIC INC<br>
+            4229 Lafayette Centrer Dr<br>
+            # 1125A, Office # 4<br>
+            Chantilly, VA - 20151<br>
+            Phone: 703-352-4567<br>
+            Email : info@aimic.com
+          </p>
+
+        </div>
+
+
+
+        </div>
+        <div class="row px-3 d-flex flex-row-reverse">
+          <div onclick="scrollToTop()" class="icon-footer-up d-flex justify-content-center">
+            <i class="fa-solid fa-up-long align-self-center"></i>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid row mt-1 py-3 mb-0 copyright-below-footer">
+      <div class="col-md-2"></div>
+      <div class="col-md-3" ><p class="p-below-footer">© Coppyright 2022 by AIMIC - All right reserved.</p></div>
+      <div class="col-md-3"></div>
+      <div class="col-md-3 d-flex flex-row-reverse" ><p class="text-right p-below-footer">Terms & Conditions   |   Privacy Policy</p></div>
+      <div class="col-md-1"></div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+<!--This is the script of Bottom to Top button-->
+<script>
+  function scrollToTop() {
+      window.scrollTo(0, 0);
+  }
+</script>
+</html>

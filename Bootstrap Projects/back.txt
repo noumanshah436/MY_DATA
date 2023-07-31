@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, world!</title>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-2 shadow-sm">
+    <div class="container ">
+      <a class="navbar-brand  h1" href="#"><strong>YOUR LOGO</strong> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOOKBOOK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#">BLOG</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav sm-icons ">
+          <li class="nav-item "><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+          <li class="nav-item "><a class="nav-link" href="#"><i class="bi bi-heart"></i></a></li>
+          <li class="nav-item "><a class="nav-link" href="#"><i class="bi bi-cart3"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- header -->
+
+  <div class="header p-0 m-0">
+    <img src="img/1.png" class=" w-100 ">
+    <div class=" bottomright text-sm-strat  ">
+      <!-- <div class=" "> -->
+      <p class=" trend  ">New Trend</p>
+      <div class="display-2 ">Collusion</div>
+      <p class=" ">An exclusive selection of this season's trends</p>
+      <button class="btn btn-sm bg-dark text-light">Shop Now</button>
+      <button class="btn btn-sm bg-dark text-light">Discover</button>
+      <!-- </div> -->
+    </div>
+  </div>
+
+
+
+  <!-- image galary -->
+
+  <section class="my-5">
+    <div class="container ">
+      <div class="row px-0 m-0 ">
+        <!-- 1st col -->
+        <div class="col-lg-6 col-12   ">
+          <div class="row ">
+            <div class="col-12     ">
+              <img src="img/2.png " class="w-100 img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-sm-6   col-12    ">
+              <img src="img/3.png  " class="img-fluid w-100" alt="" />
+            </div>
+            <div class="col-sm-6 col-12 mt-4 mt-sm-0   ">
+              <img src="img/4.png  " class="img-fluid w-100" alt="" />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 2nd col -->
+        <div class="col-lg-6 col-12  m-0 mt-sm-4  mt-4 mt-lg-0">
+          <img src="img/_8.png" class="img-fluid w-100 h-100" alt="" />
+        </div>
+
+
+      </div>
+  </section>
+
+
+
+  <!-- women -->
+  <div class="container-fluid pb-5">
+    <div class="row   text-center mx-auto">
+      <div class="col-12">
+        <h4 class="  pb-3 mt-4">Women`s Fashion </h4>
+        <p class="  pb-3  ">Show our new arrivals from established brands </h1>
+      </div>
+    </div>
+  </div>
+  <!-- women cards -->
+  <div class="container pb-5">
+    <div class="row pb-5">
+
+      <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/6.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/7.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/8.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text text-uppercase">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/9.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- mens -->
+  <div class="container-fluid pb-5">
+    <div class="row   text-center mx-auto">
+      <div class="col-12">
+        <h4 class="  pb-3 ">Men`s Fashion </h4>
+        <p class="  pb-3  ">Show our new arrivals from established brands </h1>
+      </div>
+    </div>
+  </div>
+  <!-- men cards -->
+  <div class="container pb-5">
+    <div class="row pb-5">
+
+      <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/10.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/11.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/12.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text text-uppercase">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+        <div class="card border-0">
+          <img src="img/13.png" alt="team member" class="card-img-top">
+
+          <div class="card-body text-tart p-0 my-3">
+            <p class="card-title">IGURE</p>
+            <p class="card-text">
+              GREEN MUSCLE FIT POLO SHIRT
+            </p>
+            <div>
+              <span class="me-3 text-decoration-line-through">$2220.0</span>
+              <span class="text-danger ">$2220.0</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- heading  2nd image gallery -->
+  <div class="container-fluid pb-5">
+    <div class="row   text-center mx-auto">
+      <div class="col-12">
+        <h4 class="  pb-3 ">AVON STYLES</h4>
+        <p class="  pb-3  ">CHOOSE YOUR FAVOURITE </h1>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd image gallery -->
+
+  <div class="container mb-5">
+
+    <div class="row ">
+      <!-- lefy -->
+      <div class="col-md-6 pt-5 mb-sm-5 mb-5 mb-lg-0">
+        <img src="img/17.png" alt="img5" class="w-100">
+      </div>
+
+      <!-- right -->
+      <div class="col-md-6  ">
+
+        <img src="img/15.png " class="parent w-100 h-80" alt="">
+
+        <div >
+
+
+          <div style="display: flex; justify-content: end;">
+            <div class="set-image"  >
+
+                <img src="img/16.png" class="h-100 w-100 set-margin"  alt="">
+            </div>
+          </div>
+
+          <div class=" child-2 ">
+
+          </div>
+        </div>
+        <div class="text-decoration-underline ms-2 d-flex justify-content-start justify-content-lg-strat justify-content-lg-center   "   >
+          <p>SHOW WOMENS DRESS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Bottom header -->
+  <div class="header p-0 m-0">
+    <img src="img/14.png" class=" w-100 ">
+    <div class=" topright text-sm-strat">
+      <div class=" ">
+        <p class=" trend  ">Own the day</p>
+        <div class="fw-bold fs-2 ">
+          <bold>TACHEN 19</bold>
+        </div>
+        <p class=" ">An exclusive selection of this season's trends</p>
+        <button class="btn bg-dark text-light">Shop Collection</button>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- contact -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row ">
+        <!-- left col -->
+        <div class="col-md-12 col-lg-6  gx-5 mb-5 text-center text-md-start">
+          <h2 class="text-center  ">YOUR LOGO</h2>
+          <p>Show our new arrivals from established brands how our new arrivals from established brands
+          </p>
+
+
+          <p class=" d-inline"><span class="me-3 bi bi-search"></span> Comilla, Bangladesh 3500</p>
+          <p class=" text-decoration-underline mt-2 mb-0 pb-0  ">noumanrehman042@gmail.com</p>
+          <p class=" pb-2  ">0426856432</p>
+          <div>
+            <span class="me-3 bi bi-search"></span>
+            <span class="me-3 bi bi-search"></span>
+            <span class="me-3 bi bi-search"></span>
+            <span class="me-3 bi bi-search"></span>
+          </div>
+        </div>
+
+        <!-- right col -->
+        <div class="col-md-12 col-lg-6 mb-5">
+          <h2 class="text-center mb-4">RECEIVE EMAIL UPDATES</h2>
+          <div class="input-group col-8 mb-5">
+            <input type="text" class="form-control" placeholder="YOUR EMAIL ADDRESS" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button"><b>JOIN</b></button>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-xs-12 col-md-6  text-center text-md-start  col-lg-4  mb-2 ">
+              <h5><b>SHOP</b></h5>
+              <ul class="list-unstyled ">
+                <li>
+                  <div class="thumb-content"> Shop</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Collection</div>
+                </li>
+                <li>
+                  <div class="thumb-content">Outlet</div>
+                </li>
+                <li>
+                  <div class="thumb-content">Lookbook</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-md-6 text-center text-md-start  col-lg-5  mb-2 ">
+              <h5><b>HELP</b></h5>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="thumb-content"> FAQ</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Privacy Policy</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Tearms & Conditions </div>
+                </li>
+                <li>
+                  <div class="thumb-content">Return & Exchange </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-md-6 text-center text-md-start  col-lg-3  mb-2 ">
+              <h5><b>ABOUT</b></h5>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="thumb-content"> Journal</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Our Story</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Contact</div>
+                </li>
+                <li>
+                  <div class="thumb-content"> Store Location </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
+

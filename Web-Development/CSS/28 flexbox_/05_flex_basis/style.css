@@ -1,0 +1,32 @@
+.container{
+    background-color: beige;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box{
+    height: 100px;
+   flex-basis: 300px;
+     /* flex-basis acts as width or height under certain conditions */
+    /* when flex-direction is set to row (default ) flex-basis: will control width */
+    /* when flex-direction is set to column flex-basis: will control height */
+}
+
+.red{
+    background-color: red;
+    flex-shrink: 1;
+}
+.blue{
+    background-color: blue;
+    flex-shrink: 2;
+
+}
+.orange{
+    background-color: orange;
+    flex-shrink: 13;
+
+}
+

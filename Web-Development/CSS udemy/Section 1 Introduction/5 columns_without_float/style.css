@@ -1,0 +1,21 @@
+.column p{
+    column-count: 3;
+    text-align: justify;
+    column-gap:100px;
+    column-rule: dashed blue 10px;
+}
+/*
+
+text align:
+Value	Description	 
+
+left	-> Aligns the text to the left	
+right	-> Aligns the text to the right	
+center	-> Centers the text	
+justify	-> Stretches the lines so that each line has equal width (like in newspapers and magazines)	
+initial	-> Sets this property to its default value. Read about initial	
+inherit	-> Inherits this property from its parent element. Read about inherit
+
+https://www.w3schools.com/cssref/pr_text_text-align.ASP
+
+ */

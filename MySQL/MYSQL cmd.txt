@@ -1,0 +1,55 @@
+root
+
+port: 3307
+
+pass: 4556029
+
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+For Default Port Number of mysql:
+
+mysql -u root -p
+
+**********************************
+
+for Different Port Number :
+
+mysql -h 127.0.0.1 -P 3307 -u root -p         ******
+ 
+mysql -h 127.0.0.1 -P 3307 -u user_name -p database_name
+
+exit
+
+********************************
+
+Connect to different port using MySql Command Line Client:
+
+
+Use -P parameter, like this:
+
+mysql -h 127.0.0.1 -P 3307 -u user_name -p database_name
+
+Important: if you connecting to localhost - use -h 127.0.0.1, NOT localhost, because MySQL will connect by file socket, not by TCP
+
+
+********************************
+
+login for diff user :
+
+mysql -u nouman -p
+
+
+********************************
+
+go to schemas 
+
+right click on any db and set as default schema
+
+
+*************************
+
+
+cnx = mysql.connector.connect(user="mysqluser", password="mysqlpwd",
+                              host="mysqlhost",
+                              port=3307)

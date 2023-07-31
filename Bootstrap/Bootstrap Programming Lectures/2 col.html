@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro bootstrap</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- My own CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container{
+
+            border:5px solid blue;
+        }
+        .container-fluid{
+        
+            border:2px solid blue;
+        }
+        
+        .row{
+        
+            border: 3px solid red;
+        }
+        .col{
+        
+            border: 3px solid rgb(115, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col">Col 1</div>
+            <div class="col">Col 2 </div>
+            <div class="col">Col 3</div>
+            <div class="col">Col 4 </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col">Col 1</div>
+            <div class="col">Col 2 </div>
+            <div class="w-100"></div>  <!-- break further div in new line-->
+            <div class="col">Col 3</div>
+            <div class="col">Col 4 </div>
+        </div>
+
+        <br>
+        <div class="row row-cols-2">  <!-- there will be 2 cols in one row-->
+            <div class="col">Col 1</div>
+            <div class="col">Col 2 </div>
+            <div class="col">Col 3</div>
+            <div class="col">Col 4 </div>
+            <div class="col">Col 5</div>
+            <div class="col">Col 6 </div>
+        </div>
+
+        <br>
+        <div class="row row-cols-3"> <!-- there will be 3 cols in one row-->
+            <div class="col">Col 1</div>
+            <div class="col">Col 2 </div>
+            <div class="col">Col 3</div>
+            <div class="col">Col 4 </div>
+            <div class="col">Col 5</div>
+            <div class="col">Col 6 </div>
+            <div class="col">Col 7</div>
+            <div class="col">Col 8 </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- uptill this col break point (col-lg -- large), each col will be in new line -->
+            <!-- greater than large screen , all col will show in normal form 
+                  i.e. in one line with same width of all cols -->
+            
+            <div class="col-lg">Col 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, eum? </div>
+            <div class="col-lg">Col 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque esse ea pariatur eum repellendus dicta eveniet amet ratione rem. </div>
+            <div class="col-lg">Col 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit officiis quod amet odio error ullam eveniet hic fugit provident atque beatae, nobis libero magni repellendus assumenda. Maiores, qui dolore.</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- uptill this col break point (col-lg -- large), each col will be in new line -->
+            <!-- greater than large screen , all col will show in normal form 
+                  i.e. in one line with same width of all cols -->
+            
+            <div class="col-xl">Col 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, eum? </div>
+            <div class="col-xl">Col 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque esse ea pariatur eum repellendus dicta eveniet amet ratione rem. </div>
+            <div class="col-xl">Col 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit officiis quod amet odio error ullam eveniet hic fugit provident atque beatae, nobis libero magni repellendus assumenda. Maiores, qui dolore.</div>
+        </div>
+    </div>
+    
+</body>
+</html>

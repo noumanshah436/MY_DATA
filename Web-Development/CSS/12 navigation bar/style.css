@@ -1,0 +1,29 @@
+ul     /*  target unordered list*/
+{
+ list-style-type: none;   /*  remove dots from list*/
+ padding:0px;
+ margin: 0px;
+ overflow: hidden;
+ background-color: #444444;
+}
+li a{            /*  target a tag within list item */
+ float: left;
+ display: block;
+ color: white;
+ padding: 10px 15px;
+ font-size:30px;
+ text-align: center;
+ text-decoration:none;    /* to get rid of underline*/
+ border-right: 1px solid black;
+ min-width:60px;
+}
+li a:hover{
+ background-color: #222222;
+
+ animation: myGlowAnimation;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+}
+@keyframes myGlowAnimation{
+ 50% {text-shadow: 0px 0px 10px yellow;}
+}

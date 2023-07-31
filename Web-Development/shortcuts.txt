@@ -1,0 +1,21 @@
+alt + arrow   -> move line up and down
+ctrl+d        ->  duplicate
+Ctrl with =   zoom in    (full  app)
+ctrl with -   zoom out
+
+
+ctrl+enter   move to next line
+
+ctrl+space    show all values ( like emmet )
+
+multiple cursors  ->  hold alt and click where you want another cursor
+                  -> click elsewhere to clear all cursors
+
+
+
+
+
+li*4
+
+
+

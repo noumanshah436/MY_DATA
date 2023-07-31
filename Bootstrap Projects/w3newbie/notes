@@ -1,0 +1,11 @@
+display-  1 to 4
+
+mx-auto  -> horizontally center the element within the boundary of its parent.
+
+we can use two types of icons:
+1) font awesome icons
+2) bootstrap icons
+
+
+
+col-sm   only apply in screen >sm  other wise it show data in new row

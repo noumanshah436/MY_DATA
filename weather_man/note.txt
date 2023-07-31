@@ -1,0 +1,6 @@
+ruby weatherman.rb -e  2004 Murree_weather
+ruby weatherman.rb -a  2004/7 Murree_weather
+ruby weatherman.rb -c  2004/7 Murree_weather
+ruby weatherman.rb -b  2004/7 Murree_weather
+
+ 

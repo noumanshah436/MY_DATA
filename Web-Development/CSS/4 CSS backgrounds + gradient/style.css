@@ -1,0 +1,144 @@
+
+/*
+
+
+	All CSS Background Properties
+
+	Property	            Description
+
+	background	            Sets all the background properties in one declaration
+	background-attachment	  Sets whether a background image is fixed or scrolls with the rest of the page
+	background-clip	        Specifies the painting area of the background
+	background-color	    Sets the background color of an element
+	background-image		Sets the background image for an element
+	background-origin		  Specifies where the background image(s) is/are positioned
+	background-position		Sets the starting position of a background image
+	background-repeat		Sets how a background image will be repeated
+	background-size     	Specifies the size of the background image(s)
+
+*/
+
+
+/*
+
+	https://www.w3schools.com/css/css_background_shorthand.asp
+
+	In these chapters, you will learn about the following CSS background properties:
+
+		*  background-color
+
+		*  background-image
+
+		*  background-repeat      ( values = no-repeat , repeat-x  , repeat-y)
+
+		*  background-attachment  ( values = scroll or fixed (will not scroll with the rest of the page)   )
+
+		*  background-position    ( values = top , left , right , center , combinations of any two)
+		                           ( If you only specify one keyword, the other value will be "center" )
+
+
+		*  background (shorthand property) ---- set the background properties in one declaration ( order matters )
+
+		   example:    background: #ffffff url("imgage.png") no-repeat right top;
+
+	   	   syntax:;    background: color image repeat attachment position;
+
+*/
+
+
+
+
+html
+{
+	/*  setting background image*/
+
+	background-image: url("PUCIT.jpg");
+	background-repeat:  no-repeat ;    /* do not repeat the element   */
+	background-position: center center;       /* set element at the center  */
+    background-size: cover;            /* cover the full width of web browser  */
+    background-attachment: fixed;      /*  will not scroll with the rest of the page  */
+
+}
+
+
+/*    setting background-color
+
+html
+{
+
+	//The background-color property specifies the background color of an element.
+
+	background-color:green;
+	background-color:rgb(100,255,75);
+	background-color:#000000;
+
+	rgba(red, green, blue, alpha)
+
+    opacity ******************
+	The opacity property specifies the opacity/transparency of an element.
+	It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+    Can be set using 2 ways
+
+    1)  opacity: 0.3;
+    2)  background: rgba(0, 128, 0, 0.3)       Green background with 30% opacity
+
+        rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+
+}
+
+*/
+
+
+/*   setting gradient color
+
+html
+{
+	//a gradient is a gradual change from one color to another
+
+	background: linear-gradient(grey,black);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+/*
+	Here, the <h1>, <p>, and <div> elements will have different background colors:
+*/
+
+h1
+{
+	/*background-color: green; */
+	background: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+	/* opacity: 0.3; */
+}
+
+
+#mytext
+{
+	background: linear-gradient(to left,blue,indigo); /* to right, to left , to top */
+
+}
+
+/*
+div
+{
+	background-color: green;
+}
+p
+{
+  background-color: yellow;
+}
+*/
+

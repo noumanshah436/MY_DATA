@@ -1,0 +1,13 @@
+@import url('bootstrap');
+@import url('vue-directive-tooltip/css/index.css');
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.col-form-label {
+	font-weight: bold;
+	text-align: right;
+}

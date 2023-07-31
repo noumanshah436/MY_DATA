@@ -1,0 +1,35 @@
+
+
+npm install -g @vue/cli
+
+
+vue --version
+
+
+*********************
+
+
+Create a project:
+vue create my-project
+# OR
+vue ui
+
+
+
+*************************
+
+
+vue create my-project
+
+select manually ( hit space to check features)
+
+hit enter
+choose version
+choose -- in dedicated config files
+choone 'n' for not set it as preset
+
+
+
+*************************
+
+\{^_^}/ hi!

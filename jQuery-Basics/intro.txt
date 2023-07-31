@@ -1,0 +1,72 @@
+.jQuery is a lightweight, "write less, do more", JavaScript library.
+
+. jquery is in fact a javascript libraray. 
+
+. We can run javascript inside jquery
+
+. A library containing a set of functions (reusable functions) created using JavaScript.
+
+jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.
+
+Why jQuery in Hindi?
+
+.jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish and wraps them into methods that you can call with a single line of code.
+
+.jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation. Also, from CSS to ex. CSS manipulation, Effects, and animations
+
+.JQuery functions are completely browser independent.
+
+.Many of the biggest companies on the Web use jQuery, such as: 
+Google, Microsoft, IBM, Netflix etc
+
+jQuery is not a language, but it is a well written JavaScript code. As quoted on official jQuery website, "it is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development"
+
+What is jQuery?
+jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+The jQuery library contains the following features:
+
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities
+Tip: In addition, jQuery has plugins for almost any task out there.
+
+
+**************************************************************************************
+
+Adding jQuery to Your Web Pages
+There are several ways to start using jQuery on your web site. You can:
+
+Download the jQuery library from jQuery.com
+Include jQuery from a CDN, like Google
+
+********************************
+
+Downloading jQuery
+
+There are two versions of jQuery available for downloading:
+
+Production version - this is for your live website because it has been minified and compressed
+Development version - this is for testing and development (uncompressed and readable code)
+
+Both versions can be downloaded from jQuery.com.
+
+********************************
+jQuery CDN
+
+If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).
+
+Both Google and Microsoft host jQuery.
+
+One big advantage of using the hosted jQuery from Google or Microsoft:
+
+Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.

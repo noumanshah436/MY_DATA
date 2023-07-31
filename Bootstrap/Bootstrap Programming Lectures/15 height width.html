@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .lightgreen {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <div class="container clearfix" style="height:300px;">
+        <div class="h-25 lightgreen"><!--height-->
+            <h2>Div A</h2>
+            (  h-25 ) Lorem ipsum dolor sit amet
+        </div>
+        <div class="h-75 blue">
+            <h2>Div B</h2>
+            (  h-75 ) Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+    <br>
+    <!-- jitni viewport ki height width ho gi ye utni le le ga
+            or ye 100%  fixed ha -->
+    <div class="container clearfix" style="height:300px;">
+        <div class="vw-100 h-25 lightgreen"><!--viewport width-->
+            <h2>Div A</h2>
+            (  h-25 ) Lorem ipsum dolor sit amet
+        </div>
+        <div class="vh-100 w-25 blue">  <!--viewport height-->
+            <h2>Div B</h2>
+            (  h-75 ) Lorem ipsum dolor sit amet
+        </div>
+    </div>
+
+</body>
+
+</html>

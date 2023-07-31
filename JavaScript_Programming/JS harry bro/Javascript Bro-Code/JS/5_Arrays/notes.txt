@@ -1,0 +1,46 @@
+shift = removes the first element from an array and returns that removed element.
+unshift =   adds one or more elements to the beginning of an array and returns the new length of the array.
+
+*************************************
+
+let user = {
+  name: "John",
+  age: 30
+};
+
+Object.keys(user) = ["name", "age"]
+Object.values(user) = ["John", 30]
+Object.entries(user) = [ ["name","John"], ["age",30] ]
+
+
+*************************************
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+*************************************
+
+The following methods mutate the original array:
+
+copyWithin()
+fill()
+pop()
+push()
+reverse()
+shift()
+sort()
+splice()
+unshift()
+
+*************************************
+
+The following methods create new arrays with @@species:
+
+concat()
+filter()
+flat()
+flatMap()
+map()
+slice()
+splice()     (to construct the array of removed elements that's returned)
+
+*************************************

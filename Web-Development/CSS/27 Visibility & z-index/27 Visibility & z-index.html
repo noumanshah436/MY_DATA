@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility and z-index</title>
+
+    <!-- https://www.w3schools.com/cssref/pr_pos_z-index.asp -->
+    <!-- 
+
+    The z-index:-----------------------------------------------
+    The z-index property specifies the stack order of an element.
+    An element with greater stack order is always in front of an element with a lower stack order.
+    
+    Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and 
+    flex items (elements that are direct children of display:flex elements).
+
+    The visibility property:-----------------------------------------
+    The visibility property specifies whether or not an element is visible.
+    Tip: Hidden elements take up space on the page.
+    Use the display property to both hide and remove an element from the document layout!
+    
+                    -----------------------------------------------------------------
+-->
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box-1 {
+            position: relative;
+            top: 49px;
+            z-index: -35;
+            background-color: green;
+        }
+
+        #box-2 {
+            position: relative;
+            top: 14px;
+
+            /* z-index  will work only for position: relative, absolute, fixed or sticky; */
+            z-index: -165;
+
+            /* display: none;  */
+            /* will hide the element and the space */
+
+            /* visibility:hidden;  */
+            /* will hide the element but will show its empty space */
+            background-color: red;
+        }
+
+        #box-3 {
+            background-color: blue;
+        }
+
+        #box-4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+
+</html>

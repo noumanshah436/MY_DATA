@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>DA BEST WEBSITE :D</title>
+		 
+		
+	</head>
+	<body>
+		<!-- for and id attribute link label and component
+			placeholder- is the default text that is auto remove
+			value- to set initial value that can be removed -->
+
+			<form>
+			<label for="first_name">First Name:</label>   <!-- using label our textBox is linked with text ( for attribute will link)-->
+			<input type="text" id="first_name" name="first_name" placeholder="Syed">
+            <!-- godd practice that id = name -->
+			<br><br>
+			 
+
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name" placeholder="Nouman">
+
+			<br><br>
+
+			<label for="title">Title :</label>
+            <!-- name attribute work as to select one from all other radio buttons -->
+            <!--for this grouping, name attribute should same for all   -->
+			<label for="Mr."> Mr. </label>
+			<input type="radio" value="Mr."   id="Mr."   name="title" checked>
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio" value="Mrs."  id="Mrs."  name="title">
+			<label for="Miss.">Miss.</label>
+			<input type="radio" value="Miss." id="Miss." name="title">
+			<label for="PhD">PhD</label>
+			<input type="radio" value="PhD."  id="PhD." name="title">
+
+  			<br><br>
+
+
+  			<label for="payment">Payment:</label> <!-- drop down list-->
+
+  			<select id="payment" name="payment">
+  				<option value="visa"  selected >visa</option>   <!-- text b/w tag is visible -->
+  				<option value="mastercard" >mastercard</option>
+  				<option value="giftcard">giftcard</option>
+  				<option value="check">check</option>
+  			</select>
+
+  			<br><br>
+
+
+ 			<label for="email">Email:</label>
+ 			<input type="email" id="email" name="email" placeholder="bcsf18m027@gmail.com">
+
+  			<br><br>
+
+  			<label for="birthday">Birthday:</label>  <!--  input date  -->
+  			<input type="date" id="birthday" name="birthday" min="2000-01-15" max="2022-12-31"> <!-- yyyy-month-date  -->
+
+  			<br><br>
+
+  			<label for="quantity">Quantity:</label>
+  			<input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+
+ 	 		<br><br>
+
+ 	 		<label for="phone">Phone #:</label>
+ 	 		<input type="tel" id="phone" name="phone" placeholder="0342-4556029">
+
+			<br><br>
+
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass" maxlength="12">
+			max 12 characters
+			<br><br>
+
+			<label for="slider">Rate us:</label>
+			1<input type="range" step="25" value="50">5
+  			<br><br>
+
+  			
+  			<label for="subscribe">Subscribe</label>
+  			<input type="checkbox" id="subscribe" name="subscribe">
+			<br><br>
+
+			 
+            
+            <label for="message">  </label>
+            <textarea name="message" rows="8" cols="40" placeholder="Comment Section"></textarea>
+            <br><br>
+
+
+			<label for="myfile">upload a file:</label>
+			<input type="file" id="myfile" name="myfile" accept=".txt"  > 
+
+			<br><br>
+
+			<input type="reset"><!-- when we click all form will clear-->
+
+			<br><br>
+
+			<input type="submit">
+
+		</form>
+		
+	</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <p class='odd'>this is my body1</p>
+    <p id='second'>this is my body2</p>
+    <p class='odd'>this is my body3</p>
+    <p>this is my body4</p>
+
+    <button id='but'>Toggle now</button>
+    <br><br>
+
+    <div id='wiki'>
+        Code With Harry(1770–3854) was the first person born in British America to be ordained a Catholic priest.
+        Originally from the colonial Province of Maryland, he became influential in the establishment of Catholicism in
+        Washington, D.C. through his parochial service and founding of several educational institutions. He was the
+        second pastor of St. Patrick's Church, the President of Georgetown College (later known as Georgetown
+        University), and the head of the Washington Catholic Seminary, which became Gonzaga College High School, in
+        addition to being co-founder and president of the Washington Library Company, the first public library in the
+        District of Columbia. He founded several orphanages, schools, and parishes, and was co-director of the District
+        of Columbia Public Schools. In 1832 he officiated at the wedding of a French diplomat and Mary Anne Lewis, a
+        ward of President Andrew Jackson, in the first Catholic ceremony to be held in the White House.
+    </div>
+
+    <form id="formToHandle">
+        <input id='inp' type="text">
+        <textarea id='ta'> this is your value my text area</textarea>
+    </form>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<!-- <script src="js/myjQuery.js"></script> -->
+
+
+<script>
+
+    //  $( function(){} )    //     one way to run js code when our document is ready
+
+    $(document).ready(function () {                 // we should run our javascript when our document is ready
+        console.log("I am in a new file now");
+
+        //Your jquery code here
+        console.log("We are using jQuery");
+        console.log($);
+        console.log(jQuery);
+
+        // jQuery Syntax looks like this
+        // $('selector').action()
+
+        //clicks on all the p elements.
+        // $('p').click();                                  // click on p ( either we click on p or run this code , both are same)
+
+        $('p').click(function () {
+            console.log('you clicked on p', this);       // only get particular p that is clicked
+            //  $(this).hide();
+            //  $('#id').hide();
+            //  $('.class').hide();
+        });                                             // do this when we click on p
+
+        // $('p').dblclick(function () {
+        //     console.log('you double clicked on p', this);
+        //     //  $('#id').hide();
+        //     //  $('.class').hide();
+        // });
+
+        // $('p').hover(function () {                      // hover( functionOnMouseEnter, functionOnMouseLeave )
+        //     console.log('you hoverd on: ', this);
+        //     //  $('#id').hide();
+        //     //  $('.class').hide();
+        // },
+        // function (){
+        //     console.log('Thanks for coming')
+        // });
+
+        //  ****************************************
+
+        // there are three main types of selectors in jQuery
+        // 1. element selector
+        // 2. id selector
+        // 3. class selector
+
+        // 1. Element selector -  This is an example of element selector which clicks on all p
+        // $('p').click();
+
+        // 2. Id selector - this is an example of id selector
+        // $('#second').click();
+
+        // 3. Class selector - this is an example of class selector
+        // $('.odd').click();
+
+        // other selectors
+        // $('*').click() // clicks on all the elements
+        // $('p.odd').click() // clicks on all the elements
+        // $('p:first').click() // clicks only on first element
+
+
+        //  ****************************************
+
+        // Events in jQuery
+
+        // Mouse events = click, dblclick, mouseenter, mouseleave
+        // KeyboardEvent = keypress, keydown, MediaKeyStatusMap
+        // form events = submit, change, focus, blur
+        // document/window events = load, resize, scroll, unload
+
+
+        // demoing the on method
+        $("p").on('click', function () {
+            console.log("Thanks for clicking", this);
+        });
+
+        //  on method for multiple event handlers
+        $("p").on({
+            click: function () {                    // when someone click on p run this function
+                console.log("Thanks for clicking", this);
+            },
+            mouseleave: function () {               // when someone laves from p run this function
+                console.log("mouseleave");
+            },
+        });
+
+        $("#inp").focus(function () {
+            $(this).css("background-color", "pink")
+            $(this).val('Nouman Clicked')
+        });
+
+        $("#inp").blur(function () {
+            $(this).css("background-color", "#ffffff")
+            $(this).val('')
+        });
+
+        $("#formToHandle").submit( function(e){
+            e.preventDefault();
+            $(this).css("background-color", "pink")
+
+        });
+
+        // ****************************************
+
+        // $('#wiki').hide();    //  changes the css display property to none
+        //$('#wiki').show();     //  changes the css  display property to block
+
+        // $('#wiki').hide(1000, function () {     // take 1 second to hide selected element and run this function when action is completed ( i.e after 1 second)
+        //     console.log("hidden");
+        // })
+        // $('#wiki').show(1000, function () {
+        //     console.log("show");
+        // })
+
+        $("#but").click(function () {
+
+            // $("#wiki").toggle(5000); //  toggle between hide and show
+            $("#wiki").fadeOut(5000);
+        });
+
+        // toggle( ); //  toggle between hide and show
+        // fadeOut(): hide the content in given time with fading(decrement in opacity),
+        // fadeIn(): unhide the content in given time with fading(increment in opacity),
+        // fadetoggle(): switch between hide / unhide in given time with fading(increment / decrement in opacity),
+        // fadeTo(): change in opacity - value of the content with given specific value opacity in given time(syntax => $('p').fadeTo(1000(time), 0.5(opacity), function).
+
+        // ****************************************
+
+        // Slide methods - speed and callback parameters are optional
+        // to add beatuiful animations  using single line
+
+        // $('#wiki').slideUp(1000, function(){
+        //     console.log('done');
+        // })
+
+        // $('#wiki').slideDown(1000)
+        // $('#wiki').slideToggle(1000)  //  toggle between  slideUp and slideDown
+
+        // ****************************************
+
+        // Animate function in jQuery
+        // $('#wiki').animate( { attributes to change } , timeDuration);    ----  syntax
+
+        //  apply all these properties in fast mode:
+
+        // $('#wiki').animate({
+        //     opacity:0.3,
+        //     height: '150px',
+        //     width:'350px'
+
+        // }, "fast")
+
+        // *****************
+
+        //  these animations will be applied in queue ( one after another ):
+
+        // $('#wiki').animate({ opacity: 0.3 }, 4000);  //  change opacity to 0.3 in 4 seconds
+        // $('#wiki').animate({ opacity: 0.9 }, 1000);  // then increase opacity to 0.9 in 1 second
+        // $('#wiki').animate({ width: '350px' }, 12000);
+
+        //$('#wiki').stop()  // Stop the currently-running animation on the matched elements ( try in inspect i.e dom )
+
+        // ****************************************
+
+        //  JQuery with html ( dom manipulation ) --------------------------https://www.w3schools.com/jquERy/jquery_dom_add.asp
+
+        // html() -> when we want to get or change html of any tag      //  suppose we want to get html inside p tag
+        // text() -> when we want to get or change text of any tag
+        // val()  -> when we wnat to get or change form fields value
+        // attr()  - function give the values of specific attribute
+        // remove() - Removes/delete the selected element(and its child elements)
+        // empty() - Removes the child elements from the selected element
+
+        // https://www.w3schools.com/jquERy/jquery_dom_add.asp
+
+        // append() method inserts content AT THE END of the selected HTML elements ( within that element).
+        // prepend() method inserts content AT THE BEGINNING of the selected HTML elements.
+        // after() - Inserts content after the selected elements  ( outside that element)
+        // before() - Inserts content before the selected elements
+
+        // text() vs html() = https://www.w3schools.com/jquERy/tryit.asp?filename=tryjquery_dom_html_get
+
+        // text() vs val()
+        // For textual elements we use text()
+        // For Input Controls, We use val()
+
+        //  **************
+
+        // $('#ta').val('setting it to harry');   // setting value of text area
+        // $('#ta').html('setting it to harry');
+        // $('#ta').html('setting it to harry3');
+        //$('#inp').val('setting it to harry3');
+        //$('#inp').attr('id' );
+        //$('#inp').attr('value', 'nouman');
+        // $('#inp').attr('type');
+        // $('#inp').attr({value: 'Nouman', type:"button"});    // change multiple attributes
+        // $('#inp').empty()                                      // will not work
+        // $('#wiki').empty()
+         // $("#formToHandle").empty()
+        // $('#wiki').text('you are good')
+        // $('#wiki').remove()
+
+        // $('#wiki').addClass('myclass')
+        // $('#wiki').addClass('myclass2')
+        // $("h1, h2, p").addClass("blue");
+        // $('#wiki').removeClass('myclass2')
+        // $("h1, h2, p").toggleClass("blue");            // if blue class is added remove it or if it is not added then add it
+
+
+        // $('p.odd').append('<b>Appended text</b>.');
+        // $("ol").append("<li>Appended item</li>");
+
+        // $('p.odd').prepend('<b>Appended text</b>.');
+        // $("ol").prepend("<li>Prepended item</li>");
+
+        // $("ol").before("<div>Before</div>");
+        // $("ol").after("<div>After</div>");
+
+        //  practice append                                                 https://www.w3schools.com/jquERy/tryit.asp?filename=tryjquery_html_append2
+        // var txt1 = "<p>Text.</p>";        // Create text with HTML
+        // var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+        // var txt3 = document.createElement("p");
+        // txt3.innerHTML = "Text.";         // Create text with DOM
+        // $("body").append(txt1, txt2, txt3);   // Append new elements
+
+
+        // $('#wiki').css('background-color', 'red')                                  // set the css property for ALL matched elements
+        // $("#wiki").css({ "background-color": "yellow", "font-size": "200%" });    // set multiple css property for ALL matched elements
+        // $('#wiki').css('background-color')                                        //  return the property value of the FIRST matched element
+        // $('#pic').css('width')                                       //  return the property value of the FIRST matched element
+
+            var d = $("<div>");//Create DIV in memory
+            //d.attr("style","background-color:red;width:50px;height:50px;");
+			d.attr("style","background-color:"+c+";width:"+w+"px;height:"+h+"px;");
+
+        // ****************************************
+
+        // ajax: Art of exchanging data with a server without reloading the page.
+
+        // AJAX Using jQuery
+
+        // $.get ( 'url', function(data, status){})
+        $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+        // post syntax
+        // $.post ( 'url', data_obj,  function(data, status){} )
+        // $.post('https://code.jquery.com/jquery-3.3.1.js',
+        //     { name: 'harry', channel: 'code with harry' },        //  data
+        //     function (data, status) { alert(status) });
+    });
+
+</script>
+
+
+
+</html>

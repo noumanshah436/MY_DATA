@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset class</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- My own CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid blue;
+        }
+
+        .container-fluid {
+            border: 5px solid blue;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .black {
+            background: black;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <!-- offset-* work on all screens ( do not work  responsively )-->
+            <div class="col-5 offset-3 pink">( col-5 offset-3 pink ) ROW 1  sit amet consectetur adipisicing elit. Ab, nesciunt.
+            </div>
+            <div class="col-3 blue">( col-3 blue ) -- dolor sit, amet consectetur adipisicing elit. Perferendis, qui.</div>
+        </div>
+
+        <br>
+        <div class="row ">
+            <!-- offset-*-* work responsively for one type of screen only)-->
+            <!-- we can add this for more than one screen at a time )-->
+            <div class="col-md-5  offset-md-3  pink">(  col-md-5 offset-md-3 pink ) ROW 2 sit amet consectetur adipisicing elit. Ab,nesciunt.
+            </div>
+            <div class="col-md-3  blue">(  col-md-3 blue )    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, qui.</div>
+        </div>
+
+        <br>
+        <div class="row ">
+            <div class="col-md-5  offset-md-3  offset-lg-1 pink">( col-md-5   offset-md-3   offset-lg-1 pink ) ROW 3 sit amet consectetur adipisicing elit.
+                Ab, nesciunt.</div>
+            <div class="col-md-3 blue">( col-md-3 blue )Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, qui.</div>
+        </div>
+
+        <br>
+        <div class="row ">
+            <div class="col-md-5  offset-md-3  offset-lg-1 pink">(  col-md-5  offset-md-3  offset-lg-1 pink )  ROW 4 amet consectetur adipisicing elit.
+                Ab, nesciunt.</div>
+            <div class="col-md-3 offset-md-2 blue">(col-md-3 offset-md-2 blue ) dolor sit, amet consectetur adipisicing elit. Perferendis, qui.</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- col-md-5   apply grid scheme if screen > medium (768 px)  -->
+            <!-- offset-3   give space for all screens -->
+
+            <div class="col-md-5 offset-3 pink">( col-md-5   offset-3   pink)  ROW 5 sit amet consectetur adipisicing elit. Ab, nesciunt.
+            </div>
+            <div class="col-md-3 blue">  (  col-md-3   blue ) dolor sit, amet consectetur adipisicing elit. Perferendis, qui.</div>
+        </div>
+
+        
+    </div>
+
+</body>
+
+</html>

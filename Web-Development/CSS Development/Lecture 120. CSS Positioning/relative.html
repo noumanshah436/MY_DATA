@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        #div-1 {
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+            /* top bottom and left rigth will not work if position is static or not set (default )*/
+        }
+
+        #div-2 {
+            background-color: yellow;
+            width: 350px;
+            height: 350px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            /* this div is  top: 50px;  left: 50px;  relative to its parent div*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-1">
+        <div id="div-2"></div>
+    </div>
+</body>
+
+</html>

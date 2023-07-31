@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>align content</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .lightgreen {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--
+            (carefully set the col class)
+            align-content-stretch ( default)
+            align-content-end
+            align-content-start
+            align-content-center
+            align-content-between
+            align-content-around
+            align-content-baseline
+        -->
+
+        <div class="row align-content-start" style="height: 300px ;">
+            <div class="col-md-3 pink">
+
+                <p>( col-md-3 pink ) sit amet consectetur adipisicing elit. Odio, dolore!</p>
+            </div>
+            <div class="col-md-7 green">
+
+                <p>align-items-start sit amet consectetur adipisicing elit. Tempore, unde?
+                    align-items-start sit amet consectetur adipisicing elit. Tempore, unde?
+                </p>
+
+            </div>
+            <div class="col-md-3 orange">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+
+            <div class="col-md-5 lightgreen">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+            <div class="col-md-3 pink">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+        </div>
+
+        <br>
+        <!--
+            
+            align-content-*-*
+            
+        -->
+
+        <div class="row align-content-md-center" style="height: 300px ;">
+            <div class="col-sm-3 pink">
+
+                <p>( col-md-3 pink ) sit amet consectetur adipisicing elit. Odio, dolore!</p>
+            </div>
+            <div class="col-sm-7 green">
+
+                <p>align-items-start sit amet consectetur adipisicing elit. Tempore, unde?
+                    align-items-start sit amet consectetur adipisicing elit. Tempore, unde?
+                </p>
+
+            </div>
+            <div class="col-sm-3 orange">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+
+            <div class="col-sm-5 lightgreen">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+            <div class="col-sm-3 pink">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde?</p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

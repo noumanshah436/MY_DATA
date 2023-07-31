@@ -1,0 +1,1 @@
+hold down ctrl button and reload the page 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+
+
+
+  /*
+
+forwards :  Let the div element retain the style values from the last keyframe when the animation ends:
+
+backwards: Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):
+
+both:Let the div element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends:
+
+;
+
+;
+  */
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+
+
+<div></div>
+
+
+</body>
+</html>

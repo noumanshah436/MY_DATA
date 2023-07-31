@@ -1,0 +1,15 @@
+d-property
+d-none
+d-block
+
+
+p-2
+
+d-block 
+
+
+bg-primary
+
+ text-white p-2
+
+

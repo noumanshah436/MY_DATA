@@ -1,0 +1,163 @@
+/*
+
+Basically,
+a margin is the space around an element and 
+padding refers to the space between an element and the content inside it.
+
+padding :  distance from an item within an element to its border   ;
+margin  :  distance from an elememt, either to other element or the edge of the browser 
+
+*************************************************
+*************************************************
+
+Margin - Shorthand Property
+To shorten the code, it is possible to specify all the margin properties in one property.
+
+The margin property is a shorthand property for the following individual margin properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+*************************************************
+*************************************************
+If the margin property has four values:
+
+margin: 25px 50px  75px  100px;
+
+margin: top  right bottom left;
+
+*************************************************
+*************************************************
+
+If the margin property has three values:
+
+margin: 25px 50px 75px;
+
+top margin is 25px
+right and left margins are 50px
+bottom margin is 75px
+
+*************************************************
+*************************************************
+
+If the margin property has two values:
+
+margin: 25px 50px;
+
+top and bottom margins are 25px
+right and left margins are 50px
+
+*************************************************
+*************************************************
+If the margin property has one value:
+
+margin: 25px;
+
+all four margins are 25px
+
+*************************************************
+*************************************************
+The auto Value
+
+ 
+margin-left: auto;     stick to the left side the the browser window
+margin-right: auto;    stick to the right side the the browser window
+
+*************************************************
+
+margin: auto;          horizontally center the element within its container
+                       i.e both left and right margin are set to auto
+	  
+
+The element will then take up the specified width, and the remaining 
+space will be split equally between the left and right margins.
+
+Example
+Use margin: auto:
+
+div 
+{
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+*************************************************
+*************************************************
+
+The inherit Value
+This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>):
+
+Example
+Use of the inherit value:
+
+div 
+{
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+
+*************************************************
+*************************************************
+*************************************************
+*************************************************
+*************************************************
+
+*/
+
+
+html
+{
+	margin-top: -21px;  /* remove top margin  */
+	margin-left: -8px;  /* remove left margin  */
+}
+
+h1{
+	border: 1px solid;
+	width: 300px;
+	height: 50px;
+	margin-bottom:0px;
+}
+p{
+	border: 1px solid red;
+	width: 250px;
+	padding: 25px;
+	
+}
+#p1
+{
+	margin: 25px;
+}
+#p2{
+	margin-top: 25px;
+	margin-right: 75px;
+	margin-bottom: 25px;
+	margin-left: 75px;
+	/* this is the same */
+	margin: 25px 75px 25px 75px;
+}
+#p3{
+	/* margin: 20%; */
+}
+#p4{
+	margin-left: auto;   /*  stick to the left side the the browser window*/
+}
+
+#p5{
+	margin-right: auto;  /*  stick to the right side the the browser window*/
+}
+#p6{
+	margin: auto; 
+
+	 /* horizontally center the element within its container,
+        i.e both left and right margin are set to auto
+	  */
+
+}
+

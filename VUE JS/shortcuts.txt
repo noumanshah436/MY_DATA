@@ -1,0 +1,1 @@
+ vbase-css    to get single component template

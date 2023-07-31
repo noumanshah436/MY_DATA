@@ -1,0 +1,81 @@
+﻿
+<html>
+<head>
+    <script src="jquery.js" type="text/javascript"></script>
+
+    <style>
+        .style{
+            /*border:hidden groove ;
+            width :300px;
+            text-align:left;*/
+            padding-left:300px;
+        }
+    </style>
+
+    //<script src="SecurityManager.js"></script>
+    <script>
+       $(document).ready(ReadyMain);
+		
+       function ReadyMain() {
+          
+            alert("function called");
+            $("#adminlogin").click(ClickEventHandler);
+      
+           // alert("a");
+       }
+       function ClickEventHandler() {
+
+           var row = $("<div>").attr("class", "row");
+
+           var span = $("<span>").text(rowCounter + " Degree:");
+           row.append(span);
+
+           var inp = $("<input>").attr({ "type": "text", "id": "txtDegree" });
+           row.append(inp);
+
+           span = $("<span>").text(" Name:");
+           row.append(span);
+
+           inp = $("<input>").attr({ "type": "text", "id": "txtName" });
+           row.append(inp);
+
+           span = $("<span>").text(" Marks:");
+           row.append(span);
+
+           inp = $("<input>").attr({ "type": "text", "id": "txtMarks" });
+           row.append(inp);
+
+           inp = $("<input>").attr({ "type": "submit", "id": "btnRemove", "value": "Remove" });
+
+           inp.click(function () {
+               var result = confirm("Do you want to Remove?");
+               if (result) {
+                   $(this).closest('div.row').remove();
+               }//End of if
+           });
+
+           row.append(inp);
+
+           //Add in the page
+           $('#maincontainer').append(row);
+
+       }//end of ClickEventHandler
+    </script>
+    <title>test jquery</title>
+</head>
+<body class="bdy">
+    
+    <h1 style="padding-left:300px;">Security Manager</h1>
+    <div class="maincontainer">
+        <h2>
+            Login Admin
+        </h2>
+        <div>username</div>
+        <input type="text"id="adminusername">
+        <div>passward</div>
+        <input type="text" id="adminpassward">
+        <input type="submit" id="adminlogin" value="login" >
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/*
+
+CSS Animations:
+CSS allows animation of HTML elements without using JavaScript or Flash!
+
+************************
+To make animation we have to specify these in the element which will show animations:
+
+animation: myScale;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+
+and then make this animation like a function:
+
+@keyframes myScale{
+	50%{transform: scale(0.5,0.5);}
+}
+
+
+************************
+
+Animation have following properties:
+
+Property  						values
+
+@keyframes
+animation-name
+animation-duration               time
+animation-delay                  time
+animation-iteration-count        count
+animation-direction              normal ,  reverse , alternate , alternate-reverse
+animation-timing-function        ease ,    linear , ease-in , ease-out , ease-in-out , cubic-bezier(n,n,n,n)
+animation-fill-mode              none  , forwards , backwards , both
+animation                        name duration timing-function delay iteration-count direction
+
+
+
+****************************************
+
+Property					Description
+
+@keyframes					Specifies the animation code
+animation					  A shorthand property for setting all the animation properties
+animation-delay				Specifies a delay for the start of an animation
+animation-direction			Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration			Specifies how long time an animation should take to complete one cycle
+animation-fill-mode			Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name				Specifies the name of the @keyframes animation
+animation-play-state		Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of the animation
+
+*********************
+
+shorthand property syntax:
+
+animation: name duration timing-function delay iteration-count direction
+
+*********************
+*/
+#p1{
+	width:100px;
+	height:100px;
+	background: red;
+	font-size:85px;
+	text-align:center;
+	margin:0px;
+
+	animation: myScale;
+	animation-duration: 5s;  /* default is 0s*/
+	animation-iteration-count: infinite;
+
+}
+#p1:hover{
+
+
+ /*	if we set our animation properties here , animaton starts when we place mouse on that element */
+
+}
+
+
+/*  percentage means that at this x% the element will completely changed to the given settings  */
+/*  if the given Percentage(x) is less than 100% , then after x% , element will move back to its initial state within (100-x)%  */
+/*  after the given animation-duration (at 100%) , the element will be at its initial state */
+
+@keyframes myColorAnimation{
+
+/*
+     from{background-color:red;}
+	 to{background-color:orange;}  */
+
+
+
+	0%{background-color:red;}
+	20%{background-color:orange;}  /* gradually change color from red to orange in first 20% of animation-duration*/
+	40%{background-color:yellow;}
+	60%{background-color:green;}
+	80%{background-color:blue;}
+	100%{background-color:purple;}
+}
+
+@keyframes myRotateAnimation{
+	/* 100%{transform: rotateX(360deg);} */     /*  rotate along x axis*/
+	/* 100%{transform: rotateY(360deg);} */       /*  rotate along y axis*/
+	50%{transform: rotateZ(360deg);}
+
+	/*  complete its 360deg rotain in full 100% of duration */
+	/*  if it is 50% then it complete 360deg rotation in half time (50%) and then move back to its initial state */
+
+
+}
+
+@keyframes myTranslate{
+	50% {transform: translate(100px,100px);}   /*  translate complete at 50% and then the element will move back to its initial state */
+}
+
+@keyframes myScale{
+	50%{transform: scale(0.5,0.5);}   /* move back when it reaches 50 %   */
+}
+
+@keyframes myOpacity{
+	0% {opacity:0;}
+	50%{opacity:1;}
+	100%{opacity:0;}
+
+	/*  at first opacity is 0,and is increasing gradually and when it reaches to 50% of its duration it will
+	     become 1 and at 100% it again become 0   */
+}
+
+@keyframes myFont{
+	0%{font-size:85px;}
+	50%{font-size:400px;}
+	100%{font-size:85px;}
+}
+
+

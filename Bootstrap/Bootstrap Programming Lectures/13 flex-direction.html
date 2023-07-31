@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+            font-size: 30px;
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .lightgreen {
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--
+            flex-row ( default )
+            flex-row-reverse
+            flex-row-column
+            flex-row-column-reverse
+
+            flex-wrap (default)  ( if we add div of rowSize > 12 , they will be in new line of same row )
+            flex-nowrap ( if we add div of rowSize > 12 , they will be go outside of that same row )
+
+            for diff breakpoints:
+            flex-*-*
+            flex-md-row-column
+            flex-xl-row
+        -->
+
+        <div class="row  flex-row-reverse">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+        </div>
+
+        <br>
+        <div class="row  flex-column">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+        </div>
+
+        <br>
+        <div class="row  flex-column-reverse">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+        </div>
+
+        <br>
+        <div class="row  flex-wrap">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 5
+            </div>
+
+        </div>
+
+
+        <br>
+        <div class="row  flex-wrap-reverse">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 5
+            </div>
+
+        </div>
+
+        <br>
+        <div class="row  flex-nowrap">
+            <div class="col-md-3 pink">
+                Col 1
+            </div>
+
+            <div class="col-md-3 orange">
+                Col 2
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 3
+            </div>
+
+            <div class="col-md-3 lightgreen">
+                Col 4
+            </div>
+
+            <div class="col-md-3 blue">
+                Col 5
+            </div>
+        </div>
+
+        <br>
+        <div class="row ">
+            <div class="col  pink">
+                Col 1
+            </div>
+
+            <div class="col flex-fill orange">
+                Col 2
+            </div>
+
+            <div class="col blue">
+                Col 3
+            </div>
+
+            <div class="col lightgreen">
+                Col 4
+            </div>
+
+            <div class="col blue">
+                Col 5
+            </div>
+        </div>
+
+        <br>
+        <div class="row ">
+            <div class="col  pink">
+                Col 1
+            </div>
+
+            <div class="col flex-fill orange">
+                Col 2  
+            </div>
+
+            <div class="col blue">
+                Col 3
+            </div>
+
+            <div class="col lightgreen">
+                Col 4 
+            </div>
+
+            <div class="col flex-fill orange">
+                Col 5  
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

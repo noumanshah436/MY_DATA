@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        /*
+
+         syntax to define variable:background-color: border:
+            The variable name must begin with two dashes (--) and it is case sensitive!
+
+            --variable
+            
+            To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+            To create a variable with local scope, declare it inside the selector that is going to use it.
+
+
+        Syntax of the var() Function
+            The var() function is used to insert the value of a CSS variable.
+
+            The syntax of the var() function is as follows:
+
+            var(--name, value)
+
+            Value	Description
+            name	Required. The variable name (must start with two dashes)
+            value	Optional. The fallback value (used if the variable is not found)
+             
+        
+        */
+        :root {
+            /*   
+               these variables can be accessed anywhere,
+            */
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

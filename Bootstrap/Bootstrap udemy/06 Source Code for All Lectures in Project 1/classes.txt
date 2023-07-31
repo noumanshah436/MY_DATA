@@ -1,0 +1,10 @@
+https://getbootstrap.com/docs/5.2/utilities/spacing/
+
+navbar-expand-lg  ------  before lg screen navbar will be toggles
+
+
+ml-auto   -- justify links to the right
+
+height: 100vh;   /* size of one window*/
+
+The lead class in Bootstrap is used to add emphasis to a paragraph

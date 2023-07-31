@@ -1,0 +1,17 @@
+.container{
+
+    border:5px solid blue;
+}
+.container-fluid{
+
+    border:2px solid blue;
+}
+
+.row{
+
+    border: 3px solid red;
+}
+.col{
+
+    border: 3px solid rgb(115, 255, 0);
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w3Newbie - Bootstrap Landing Page Template</title>
+    <link rel="icon" href="images/website-icon/website-ico.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript">
+        $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+            $(this).collapse('hide');
+        }
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img class="logo" src="images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse text-center" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <img src="images/desktop.png" class="banner">
+    </div>
+    <div id="about" class="container-fluid text-center">
+        <h1>Welcome to my Boootstrap Landing Page Template</h1>
+        <h3>Check out this fantastic looking flat website suing Bootstrap, HTML5 and CSS snippets!</h3>
+        <div class="row about-section-row">
+            <div class="col-md-6">
+                <p>Creating a website can be done in many ways. Many web hosting providers
+                    provide website building tools and software. This is the easiest method
+                    of building a website. Alternatively, you can use CMS such as 
+                    Wordpress, Joomla and Droopal to create your webiste.
+                    It all depends on your comfort level.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/code.png" id="code" alt="">
+            </div>            
+        </div>
+        <h3><i>"Every great developer you know got there
+                by solving problems they were 
+                to solve until they actually did it." - Patrick McKenzie</i>
+            </h3>
+    </div>
+    <img src="images/charts.png" alt="" class="banner">
+    <div id="features" class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/html5.png" class="icon" alt="">
+                <h3>HTML5</h3>
+            </div> 
+            <div class="col-sm-4">
+                    <img src="images/bootstrap.png" class="icon" alt="">
+                    <h3>Bootstrap</h3>
+            </div>  
+            <div class="col-sm-4">
+                <img src="images/css3.png" class="icon" alt="">
+                <h3>CSS3</h3>
+            </div> 
+            <h3>Build responsive, mobilte-first projects on
+                the web with the world's most-popular front-end
+                component library. Bootstrap is an open-source toolkit
+                for developing with HTML, CSS and JS.
+            </h3>                      
+        </div>
+    </div>
+    <img src="images/people.png" class="banner" alt="">
+    <div class="container-fluid text-center" id="portfolio">
+        <h2>Check out our portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/icons/camera.png" class="icon" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/icons/mic.png" class="icon" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/icons/phone.png" class="icon" alt="">
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="images/icons/calendar.png" class="icon" alt="">
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="images/icons/tv.png" class="icon" alt="">
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="images/icons/clock.png" class="icon" alt="">
+            </div>
+        </div>
+    </div>
+    <img src="images/social.png" class="banner" alt="">
+    <footer id="connect" class="container-fluid text-center">
+        <div class="row">
+            <h2>Connect</h2>
+            <div class="social">
+                <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/scrolling.js"></script>
+</body>
+</html>

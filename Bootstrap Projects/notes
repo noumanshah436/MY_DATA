@@ -1,0 +1,105 @@
+
+add icons
+
+got to bootstrap icons and click on install and copy cdn link on left side
+
+
+<div class="d-flex justify-content-between">
+  <div>
+    <img src="img/3.png" class="img-fluid" alt="" />
+  </div>
+  <div>
+    <img src="img/4.png" class="img-fluid" alt="" />
+  </div>
+</div>
+
+
+
+<!--  image galarty using flex box  -->
+<section class="p-5">
+  <div class="container text-center">
+    <div class="d-flex  ">
+
+      <div class="m-2">
+        <div class="mb-2">
+          <img src="img/2.png" class=" w-100 " alt="" />
+        </div>
+
+        <div class="d-flex">
+          <div class="col-md">
+            <img src="img/3.png" class="w-100" alt="" />
+          </div>
+          <div class="col-md">
+            <img src="img/4.png" class="w-100" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="img/8.png" class="img-fluid h-100" alt="" />
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- image galarty using grid layout -->
+<section class="mt-5">
+  <div class="container ">
+    <div class="row px-0 m-0 ">
+      <!-- 1st col -->
+      <div class="col-lg-6 col-12  bg-primary">
+        <div class="row ">
+          <div class="col-12   bg-success  ">
+            <img src="img/2.png " class="w-100 img-fluid" alt="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6   col-12 bg-danger  ">
+            <img src="img/3.png  " class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-sm-6 col-12 bg-dark ">
+            <img src="img/4.png  " class="img-fluid w-100" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2nd col -->
+      <div class="col-lg-6 col-12  m-0 bg-info">
+            <img src="img/_8.png" class="img-fluid w-100 h-100" alt="" />
+      </div>
+
+
+    </div>
+</section>
+
+
+
+<!-- 2nd gallery -->
+
+<section class="my-5">
+  <div class="container ">
+    <div class="row   ">
+      <!-- 1st col -->
+      <div class="col-lg-6 col-12   ">
+        <div class="row">
+          <div class="col-12 mt-2"></div>
+          <div class="col">
+            <img src="img/17.png" class="img-fluid w-100 h-100" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2nd col -->
+      <div class="col-lg-6 col-12  ">
+            <img src="img/15.png" class="img-fluid w-100 h-100 pb-mt-5" alt="" />
+            <!-- <img src="img/16.png" class="img-fluid w-100 h-100" alt="" /> -->
+      </div>
+
+
+    </div>
+</section>

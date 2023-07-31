@@ -1,0 +1,13 @@
+89N3PDyZzakoH7W6n8ZrjGDDktjh8iWFG6eKRvi3kvpQ
+
+
+
+sm = this class will applied when it hits the sm breakpoint  >=num
+
+
+text-sm-start = text will be at start when it hits the small bp >= num ( otherwise it will be normal)
+
+
+
+@media (min-width: 768px)  apply if width is >= 768
+

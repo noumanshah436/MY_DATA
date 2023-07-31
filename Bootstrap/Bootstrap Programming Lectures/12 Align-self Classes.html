@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>align self</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .container {
+            border: 5px solid maroon;
+
+        }
+
+        .row {
+            border: 3px solid red;
+        }
+
+        .pink {
+            background: pink;
+
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .green {
+            background: lightgreen;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row"  style="height: 300px ;">
+            <div class="col-md-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3  green">
+              ( without align-self-* ) sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+
+        <!--
+            align-self-stretch ( default)
+            align-self-baseline ( default)
+            align-self-end
+            align-self-start
+            align-self-center
+            align-self-auto  (  take property of parent class)
+        -->
+        <br>
+        <div class="row"  style="height: 300px ;">
+            <div class="col-md-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3 align-self-center green">
+                align-self--center sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row"  style="height: 300px ;">
+            <!-- for diff breakpoints ( align-self-*-center ) -->
+
+            <div class="col-md-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3 align-self-lg-center green">
+                align-self-md-center sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row align-items-start"  style="height: 300px ;">
+            <div class="col-md-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3 align-self-center green">
+                align-self-center sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row align-items-start"  style="height: 300px ;">
+            <div class="col-md-3 pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3 align-self-stretch green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row align-items-start"  style="height: 300px ;">
+            <div class="col-md-3 align-self-end pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempora?
+            </div>
+            <div class="col-md-3 align-self-auto green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quia?
+            </div>
+            <div class="col-md-5 align-self-end blue ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque.
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

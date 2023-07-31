@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            background-color: beige;
+            max-width: 960px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .wrapper::after {
+            /* content:'hhshhshs';
+                background-color: aquamarine; */
+            /* this is like we add element after wrapper , so it solve our problem */
+
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box" style="background-color: blue; float:left;"></div>
+        <div class="box" style="background-color: blue; float:left;"></div>
+
+        <!-- if we don't use clear float after the float element , it will 
+        hide the next elment, 
+        so for right float use clear: right
+        for left float use clear: left 
+        or simply use clear: both
+             -->
+        <div class="box" style="background-color: red; clear:left"></div>
+        <div class=" box" style="background-color: orange; float:left;"></div>
+        <div class=" box" style="background-color: orange; float:left;"></div>
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+
+https://www.youtube.com/watch?v=e-E0UB-YDRk&t=110s
+
+
+tailwind   2:21
+1)  npm install tailwindcss
+2)  create style.css file
+3)  npm tailwindcss init
+4)  create postcss.config.js file
+5)  add style.css file in main.js file
+
+
+***************************
+
+vue router
+
+https://router.vuejs.org/guide/#getting-started
+
+****************************
+transition
+
+https://vuejs.org/guide/built-ins/transition.html#the-transition-component
+
+****************************
