@@ -1,6 +1,0 @@
-
-Run Code:
-1)type node in terminal
-2) and then just drag and drop any file to terminal
-
-
