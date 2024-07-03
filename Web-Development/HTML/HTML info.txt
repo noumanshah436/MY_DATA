@@ -1,6 +1,0 @@
-I’m using Visual Studio Code, but you can use other programs like:
-
-Notepad++
-Sublime
-Atom
-Brackets
