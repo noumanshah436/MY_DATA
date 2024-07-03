@@ -1,8 +1,0 @@
-https://cdnjs.com/libraries
-
-sementic ui :
-https://cdnjs.com/libraries/semantic-ui
-
-
-docs UI:
-https://semantic-ui.com/introduction/getting-started.html

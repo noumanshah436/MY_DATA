@@ -1,3 +1,0 @@
-npm i movie-trailer
-npm i react-youtube
- 
