@@ -1,5 +1,0 @@
-vue create vuex-crash-course
-npm run serve
-
-npm install bootstrap axios
-
